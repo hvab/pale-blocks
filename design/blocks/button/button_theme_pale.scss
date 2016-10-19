@@ -1,0 +1,119 @@
+@function rem($px) {
+  @return $px / 16px * 1rem;
+}
+
+
+.button_theme_pale {
+  padding: 0.5em 1em;
+
+  border: 1px solid transparent;
+  border-radius: 2px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border-color;
+}
+
+
+/* Sizes */
+.button_size_xs {
+  font-size: rem(12px);
+}
+
+.button_size_s {
+  font-size: rem(14px);
+}
+
+.button_size_m {
+  font-size: rem(20px);
+}
+
+.button_size_l {
+  font-size: rem(24px);
+}
+
+.button_size_xl {
+  font-size: rem(34px);
+}
+
+
+/* Colors */
+.button_color_primary {
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten(rgba(0, 0, 0, 1), 20%);
+  }
+}
+
+.button_color_secondary {
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.54);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten(rgba(0, 0, 0, 0.54), 5%);
+  }
+}
+
+.button_color_disabled {
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.38);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten(rgba(0, 0, 0, 0.38), 5%);
+  }
+}
+
+
+/* Outline */
+.button_color_primary-outline {
+  color: rgba(0, 0, 0, 1);
+
+  border-color: rgba(0, 0, 0, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten(rgba(0, 0, 0, 1), 20%);
+
+    border-color: lighten(rgba(0, 0, 0, 1), 20%);
+  }
+}
+
+.button_color_secondary-outline {
+  color: rgba(0, 0, 0, 0.54);
+
+  border-color: rgba(0, 0, 0, 0.54);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten(rgba(0, 0, 0, 0.54), 5%);
+
+    border-color: lighten(rgba(0, 0, 0, 0.54), 5%);
+  }
+}
+
+.button_color_disabled-outline {
+  color: rgba(0, 0, 0, 0.38);
+
+  border-color: rgba(0, 0, 0, 0.38);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten(rgba(0, 0, 0, 0.38), 5%);
+
+    border-color: lighten(rgba(0, 0, 0, 0.38), 5%);
+  }
+}

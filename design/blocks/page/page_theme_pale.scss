@@ -1,0 +1,31 @@
+html {
+  font-size: 16px;
+}
+
+
+.page_theme_pale {
+  font-family:
+  /* Safari for OS X and iOS (San Francisco) */
+  -apple-system,
+  /* Chrome for OS X (San Francisco) */
+  BlinkMacSystemFont,
+  /* Windows */
+  "Segoe UI",
+  /* Android */
+  "Roboto",
+  /* Linux */
+  "Oxygen", /* KDE */
+  "Ubuntu",
+  "Cantarell", /* GNOME */
+  /* Firefox OS [R.I.P.] */
+  "Fira Sans",
+  /* Older Android */
+  "Droid Sans",
+  /* Basic web fallback */
+  "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.87);
+
+  background-color: #fff;
+}

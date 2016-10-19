@@ -1,0 +1,76 @@
+@function rem($px) {
+  @return $px / 16px * 1rem;
+}
+
+
+.content_theme_pale {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: rem(36px);
+  }
+
+  h2 {
+    font-size: rem(30px);
+  }
+
+  h3 {
+    font-size: rem(24px);
+  }
+
+  h4 {
+    font-size: rem(18px);
+  }
+
+  h5 {
+    font-size: rem(14px);
+  }
+
+  h6 {
+    font-size: rem(12px);
+  }
+
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+
+  address {
+    margin-bottom: 1rem;
+  }
+
+
+  ol,
+  ul,
+  dl {
+    margin-bottom: 1rem;
+  }
+
+
+  blockquote {
+    margin-bottom: 1rem;
+  }
+
+
+  a {
+    color: #448aff;
+
+    &:hover,
+    &:focus {
+      color: darken(#448aff, 15%);
+    }
+  }
+
+
+  mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
+  }
+}
