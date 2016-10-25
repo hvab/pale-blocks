@@ -64,7 +64,10 @@ gulp.task('build', gulp.series(
 ));
 
 gulp.task('watch', function() {
-  gulp.watch('blocks/**/*.*', gulp.series('blocks'));
+  gulp.watch([
+    'blocks/**/*.*',
+    'design/**/*.*'
+  ], gulp.series('blocks'));
   gulp.watch('pages/**/*.html', gulp.series('html'));
 });
 
