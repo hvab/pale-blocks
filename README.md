@@ -22,5 +22,3 @@ check_inline
 
 select
 ```
-
-`button_color_primary` rename to `button_view_action` etc
