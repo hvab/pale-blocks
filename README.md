@@ -21,4 +21,8 @@ check
 check_inline
 
 select
+
+http://v4-alpha.getbootstrap.com/utilities/responsive-helpers/
+
+http://v4-alpha.getbootstrap.com/utilities/screenreaders/
 ```
