@@ -33,6 +33,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.2.1",
     "postcss-color-function": "^2.0.1",
+    "postcss-import": "^9.0.0",
     "postcss-nested": "^1.0.0",
     "postcss-use": "^2.3.0"
   }

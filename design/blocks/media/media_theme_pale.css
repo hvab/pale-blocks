@@ -1,3 +1,5 @@
+@use postcss-nested;
+
 .media_theme_pale {
   .media__object {
     padding-right: 1rem;

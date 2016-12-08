@@ -8,10 +8,10 @@ const debug = require('gulp-debug');
 const del = require('del');
 const flatten = require('gulp-flatten');
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const postcssUse = require('postcss-use');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -31,6 +31,7 @@ gulp.task('buildCss', function() {
       css: bundle => bundle.src('css')
         .pipe(sourcemaps.init())
         .pipe(postcss([
+          require("postcss-import"),
           postcssUse({
             modules: ['postcss-nested', 'postcss-color-function']
           }),

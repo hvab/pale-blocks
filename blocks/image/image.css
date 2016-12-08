@@ -1,0 +1,18 @@
+.image {
+  border: 0;
+}
+
+.image_fluid {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.image_rounded {
+  border-radius: 2px;
+}
+
+.image_circle {
+  border-radius: 50%;
+}

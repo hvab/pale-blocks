@@ -4,6 +4,9 @@ html {
 
 
 .page_theme_pale {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+
   font-family:
   /* Safari for OS X and iOS (San Francisco) */
   -apple-system,
@@ -24,7 +27,4 @@ html {
   /* Basic web fallback */
   "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.87);
-
-  background-color: #fff;
 }

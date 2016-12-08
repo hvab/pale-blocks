@@ -1,13 +1,14 @@
 .media {
-  overflow: hidden;
   display: table;
+  overflow: hidden;
 }
 
 
 .media__object,
 .media__body {
-  overflow: hidden;
   display: table-cell;
+  overflow: hidden;
+
   vertical-align: top;
 }
 

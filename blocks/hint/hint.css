@@ -1,3 +1,5 @@
+@use postcss-nested;
+
 .hint {
   position: relative;
 
@@ -5,62 +7,56 @@
 
   &::after {
     position: absolute;
+    z-index: 999;
     top: 100%;
     left: 50%;
-    z-index: 999;
 
     display: inline-block;
-    content: "";
-
     visibility: hidden;
-    opacity: 0;
 
+    content: "";
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.2s;
+    transform: translateX(-50%) translateY(4px);
     pointer-events: none;
 
-    transform: translateX(-50%) translateY(4px);
-
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0ms;
+    opacity: 0;
   }
 
   &:hover::after {
     visibility: visible;
-    opacity: 1;
 
     transition-delay: 100ms;
+
+    opacity: 1;
   }
 
   /* Tooltip body */
   &::after {
     padding: 4px 8px;
 
+    text-align: center;
+    white-space: nowrap;
+
+    color: #fff;
+    border-radius: 2px;
+		background: rgba(0, 0, 0, 0.9);
+
     font-family: inherit;
     font-size: 12px;
     line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    color: #fff;
-
-		background: rgba(0, 0, 0, 0.9);
-    border-radius: 2px;
 	}
 
-  // Always get content from aria-label attribute.
+  /* Always get content from aria-label attribute. */
 	&[aria-label]::after {
 		content: attr(aria-label);
 	}
 
-	// If the `data-hint` attribute is present, use it.
-	// This might be deprecated in future in support of a11y.
-	&[data-hint]::after {
-		content: attr(data-hint);
-	}
-
-  // Hide tooltips if any of the supported attributes is empty.
-  &[aria-label=''],
-  &[data-hint=''] {
-  	&::before, &::after {
+  /* Hide tooltips if any of the supported attributes is empty. */
+  &[aria-label='']{
+  	&::before,
+    &::after {
   		display: none !important;
   	}
   }
@@ -73,8 +69,10 @@
 .hint_size_l {
   &:after {
 		white-space: normal;
+    /* Ensure long words do not overflow. */
+		word-wrap: break-word;
+
 		line-height: 1.2;
-		word-wrap: break-word; // Ensure long words do not overflow.
 	}
 }
 
