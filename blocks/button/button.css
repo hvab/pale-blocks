@@ -1,21 +1,25 @@
+@use postcss-nested;
+
 .button {
-  box-sizing: border-box;
   display: inline-block;
+
+  box-sizing: border-box;
   padding: 0;
+
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  color: inherit;
+  border: none;
+  background: none;
 
   font: inherit;
   line-height: inherit;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  color: inherit;
-
-  background: none;
-  border: none;
 
   touch-action: manipulation;
-  user-select: none;
-
+  
   &:disabled {
     opacity: 0.65;
   }
@@ -27,11 +31,13 @@
 
 .button_type_link {
   text-decoration: none;
+
   color: inherit;
 }
 
 
 .button_block {
   display: block;
+
   width: 100%;
 }

@@ -10,6 +10,8 @@ const flatten = require('gulp-flatten');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const postcss = require('gulp-postcss');
+const postcssUse = require('postcss-use');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -19,29 +21,26 @@ const builder = bundleBuilder({
     'design/blocks'
   ],
   techMap: {
-    js: ['js'],
-    css: ['scss', 'css'],
-    image: ['jpg', 'png']
+    css: ['scss', 'css']
   }
 });
 
-gulp.task('blocks', function() {
-  return bundlerFs('pages/*')
+gulp.task('buildCss', function() {
+  return bundlerFs('bundles/*')
     .pipe(builder({
       css: bundle => bundle.src('css')
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([
+          postcssUse({
+            modules: ['postcss-nested', 'postcss-color-function']
+          }),
+          require('autoprefixer')({
+            browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
+          })
+        ]))
         .pipe(concat(bundle.name + '.css'))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist/' + bundle.name)),
-
-      js: bundle => bundle.src('js')
-        .pipe(concat(bundle.name + '.js'))
-        .pipe(gulp.dest('dist/' + bundle.name)),
-
-      image: bundle => bundle.src('image')
-        .pipe(flatten())
-        .pipe(gulp.dest('dist/' + bundle.name + '/images'))
+        .pipe(gulp.dest('dist/'))
     }))
     .pipe(debug());
 });
@@ -59,15 +58,16 @@ gulp.task('html', function() {
 });
 
 gulp.task('build', gulp.series(
-  'clean',
-  gulp.parallel('blocks', 'html')
+  // 'clean',
+  gulp.parallel('buildCss', 'html')
 ));
 
 gulp.task('watch', function() {
   gulp.watch([
     'blocks/**/*.*',
-    'design/**/*.*'
-  ], gulp.series('blocks'));
+    'design/**/*.*',
+    'bundles/**/*.*'
+  ], gulp.series('buildCss'));
   gulp.watch('pages/**/*.html', gulp.series('html'));
 });
 
@@ -78,7 +78,6 @@ gulp.task('serve', function() {
     notify: false,
     open: false,
     ui: false,
-    logPrefix: "grove",
     tunnel: false,
   });
 
