@@ -4,13 +4,14 @@ const browserSync = require('browser-sync').create();
 const bundleBuilder = require('gulp-bem-bundle-builder');
 const bundlerFs = require('gulp-bem-bundler-fs');
 const concat = require('gulp-concat');
+const csso = require('gulp-csso');
 const debug = require('gulp-debug');
 const del = require('del');
 const flatten = require('gulp-flatten');
 const gulp = require('gulp');
+const gulpIf = require('gulp-if');
 const postcss = require('gulp-postcss');
 const postcssUse = require('postcss-use');
-const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
@@ -29,7 +30,7 @@ gulp.task('buildCss', function() {
   return bundlerFs('bundles/*')
     .pipe(builder({
       css: bundle => bundle.src('css')
-        .pipe(sourcemaps.init())
+        .pipe(gulpIf(isDevelopment, sourcemaps.init()))
         .pipe(postcss([
           require("postcss-import"),
           postcssUse({
@@ -40,8 +41,9 @@ gulp.task('buildCss', function() {
           })
         ]))
         .pipe(concat(bundle.name + '.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulpIf(isDevelopment, sourcemaps.write('.')))
+        .pipe(gulpIf(!isDevelopment, csso()))
+        .pipe(gulp.dest('dist'))
     }))
     .pipe(debug());
 });
@@ -59,7 +61,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('build', gulp.series(
-  // 'clean',
+  'clean',
   gulp.parallel('buildCss', 'html')
 ));
 
