@@ -41,24 +41,24 @@
 
     color: #fff;
     border-radius: 2px;
-		background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9);
 
     font-family: inherit;
     font-size: 12px;
     line-height: 1;
-	}
+  }
 
   /* Always get content from aria-label attribute. */
-	&[aria-label]::after {
-		content: attr(aria-label);
-	}
+  &[aria-label]::after {
+    content: attr(aria-label);
+  }
 
   /* Hide tooltips if any of the supported attributes is empty. */
   &[aria-label='']{
-  	&::before,
+    &::before,
     &::after {
-  		display: none !important;
-  	}
+      display: none !important;
+    }
   }
 }
 
@@ -68,12 +68,12 @@
 .hint_size_m,
 .hint_size_l {
   &:after {
-		white-space: normal;
+    white-space: normal;
     /* Ensure long words do not overflow. */
-		word-wrap: break-word;
+    word-wrap: break-word;
 
-		line-height: 1.2;
-	}
+    line-height: 1.2;
+  }
 }
 
 .hint_size_s {
