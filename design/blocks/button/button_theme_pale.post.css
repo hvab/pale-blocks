@@ -1,0 +1,57 @@
+.button_theme_pale {
+  padding: 0.5em 1em;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color;
+
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+
+/* Sizes */
+.button_size_xs {
+  font-size: 12px;
+}
+
+.button_size_s {
+  font-size: 14px;
+}
+
+.button_size_m {
+  font-size: 20px;
+}
+
+.button_size_l {
+  font-size: 24px;
+}
+
+.button_size_xl {
+  font-size: 34px;
+}
+
+
+/* Views */
+.button_view_action {
+  color: #fff;
+  background-color: teal;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: color(teal lightness(+5%));
+  }
+}
+
+.button_view_pseudo {
+  color: teal;
+  border-color: teal;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: color(teal lightness(+5%));
+    border-color: color(teal lightness(+5%));
+  }
+}

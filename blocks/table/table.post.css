@@ -1,0 +1,31 @@
+.table {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+
+  border-collapse: collapse;
+  /* Reset for nesting within parents with `background-color`. */
+  background-color: transparent;
+
+  th,
+  td {
+    box-sizing: border-box;
+
+    vertical-align: top;
+  }
+
+  th {
+    /* Centered by default, but left-align-ed to match the `td`s below. */
+    text-align: left;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  caption {
+    caption-side: bottom;
+
+    text-align: left;
+  }
+}

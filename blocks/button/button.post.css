@@ -1,0 +1,56 @@
+.button {
+  display: inline-block;
+  overflow: visible;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: none;
+
+  color: inherit;
+  border: none;
+  background: none;
+
+  font: inherit;
+  line-height: inherit;
+
+  touch-action: manipulation;
+
+  /* Remove the inner border and padding in Firefox. */
+  &::-moz-focus-inner {
+    padding: 0;
+
+    border-style: none;
+  }
+
+  /* Restore the focus styles unset by the previous rule. */
+  &:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  &:disabled {
+    opacity: 0.65;
+  }
+
+  &:focus {
+    outline-offset: -2px;
+  }
+}
+
+.button_type_link {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+
+.button_block {
+  display: block;
+
+  width: 100%;
+}

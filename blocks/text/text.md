@@ -10,7 +10,7 @@
 | `text_truncate` | Обрезает однострочный текст, и добавляет многоточие. Требуется, чтобы блок был `inline-block` или `block`. |
 | `text_hide` | Используется, когда нужно скрыть текст и поставить фоновую картинку. |
 | `text_sr` | Скрывает текст, но оставляет его доступным для экранных читалок. |
-| `text_center`, `text_left`, `text_right` | Выравнивание текста по горизонтали. |
+| `text_align_center`, `text_align_left`, `text_align_right` | Выравнивание текста по горизонтали. |
 | `text_size_xs`, `text_size_s`, `text_size_m`, `text_size_l`, `text_size_xl` | Размеры текста. |
 | `text_color_primary`, `text_color_secondary`, `text_color_disabled`, `text_color_divider` | Оттенки от черного до бледно-серого для визуального выделения текста. |
 | `text_bg_300`, `text_bg_100`, `text_bg_50` | Серые фоны от темного к светлому. |

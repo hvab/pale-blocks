@@ -42,15 +42,15 @@ See: http://a11yproject.com/posts/how-to-hide-content */
 
 
 /* Align */
-.text_center {
+.text_align_center {
   text-align: center;
 }
 
-.text_left {
+.text_align_left {
   text-align: left;
 }
 
-.text_right {
+.text_align_right {
   text-align: right;
 }
 

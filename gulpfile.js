@@ -11,7 +11,6 @@ const flatten = require('gulp-flatten');
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const postcss = require('gulp-postcss');
-const postcssUse = require('postcss-use');
 const sourcemaps = require('gulp-sourcemaps');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
@@ -22,7 +21,7 @@ const builder = bundleBuilder({
     'design/blocks'
   ],
   techMap: {
-    css: ['scss', 'css']
+    css: ['post.css', 'css']
   }
 });
 
@@ -33,9 +32,9 @@ gulp.task('buildCss', function() {
         .pipe(gulpIf(isDevelopment, sourcemaps.init()))
         .pipe(postcss([
           require("postcss-import"),
-          postcssUse({
-            modules: ['postcss-nested', 'postcss-color-function', 'postcss-pxtorem']
-          }),
+          require("postcss-nested"),
+          require("postcss-color-function"),
+          require("postcss-pxtorem"),
           require('autoprefixer')({
             browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
           })
