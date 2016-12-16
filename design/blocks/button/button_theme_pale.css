@@ -1,5 +1,6 @@
 @use postcss-nested;
 @use postcss-color-function;
+@use postcss-pxtorem;
 
 .button_theme_pale {
   padding: 0.5em 1em;

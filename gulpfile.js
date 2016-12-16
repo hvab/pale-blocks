@@ -34,7 +34,7 @@ gulp.task('buildCss', function() {
         .pipe(postcss([
           require("postcss-import"),
           postcssUse({
-            modules: ['postcss-nested', 'postcss-color-function']
+            modules: ['postcss-nested', 'postcss-color-function', 'postcss-pxtorem']
           }),
           require('autoprefixer')({
             browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
