@@ -1,5 +1,7 @@
 # pale-blocks
 
+[![GitHub Release](https://img.shields.io/github/release/palegrow/pale-blocks.svg?style=flat)](https://github.com/palegrow/pale-blocks/releases)
+
 ## TODO
 
 ```css
