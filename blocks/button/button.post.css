@@ -11,15 +11,15 @@
   vertical-align: middle;
   white-space: nowrap;
   text-transform: none;
+  touch-action: manipulation;
 
   color: inherit;
   border: none;
   background: none;
 
-  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
   line-height: inherit;
-
-  touch-action: manipulation;
 
   /* Remove the inner border and padding in Firefox. */
   &::-moz-focus-inner {
