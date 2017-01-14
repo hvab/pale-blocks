@@ -1,8 +1,5 @@
 module.exports = {
   decl: [
-    'normalize',
-    'page',
-    'button-group',
     'button',
     'clearfix',
     'container',
@@ -12,6 +9,7 @@ module.exports = {
     'image',
     'link',
     'media',
+    'page',
     'table',
     'text',
   ]

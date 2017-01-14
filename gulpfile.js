@@ -34,9 +34,7 @@ gulp.task('buildCss', function() {
           require("postcss-import"),
           require("postcss-nested"),
           require("postcss-color-function"),
-          require('autoprefixer')({
-            browsers: ['ie >= 10', 'last 2 versions', 'opera 12.1', '> 2%']
-          })
+          require('autoprefixer')()
         ]))
         .pipe(concat(bundle.name + '.css'))
         .pipe(gulpIf(isDevelopment, sourcemaps.write('.')))
