@@ -8,7 +8,6 @@
 |-------------|----------|
 | `media__object_align_middle` | Выравнивает объект вертикально по центру. |
 | `media__object_align_bottom` | Прижимает объект к низу. |
-| `media__object_right` | Может использоваться, чтобы помечать, что объект располагается справа от текста. |
 
 
 ## Примеры
@@ -29,6 +28,6 @@
   <div class="media__body">
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
-  <div class="media__object media__object_right media__object_align_middle"><img src="" width="50" height="50" alt="image"></div>
+  <div class="media__object media__object_align_middle"><img src="" width="50" height="50" alt="image"></div>
 </div>
 ```

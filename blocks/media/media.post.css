@@ -1,27 +1,16 @@
 .media {
-  display: table;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
 }
-
-
-.media__object,
-.media__body {
-  display: table-cell;
-  overflow: hidden;
-
-  vertical-align: top;
-}
-
 
 .media__body {
-  width: 10000px;
+  flex: 1;
 }
-
 
 .media__object_align_middle {
-  vertical-align: middle;
+  align-self: center;
 }
 
 .media__object_align_bottom {
-  vertical-align: bottom;
+  align-self: flex-end;
 }

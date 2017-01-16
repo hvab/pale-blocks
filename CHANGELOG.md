@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Move autoprefixer to package.json.
 - In `button` `font` changed to `font-family` and `font-size`.
+- Rewrite `media` from `display: table` to `display: flex`.
 
 ## [0.3.2] - 2016-12-19
 ### Changed
