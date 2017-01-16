@@ -4,6 +4,7 @@ module.exports = {
     'clearfix',
     'container',
     'content',
+    'grid',
     'hint',
     'icon',
     'image',

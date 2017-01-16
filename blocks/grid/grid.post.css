@@ -1,0 +1,9 @@
+.grid {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+.grid__cell {
+  flex: 1 0 5em;
+}
