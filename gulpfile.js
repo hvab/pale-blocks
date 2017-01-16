@@ -31,9 +31,12 @@ gulp.task('buildCss', function() {
       css: bundle => bundle.src('css')
         .pipe(gulpIf(isDevelopment, sourcemaps.init()))
         .pipe(postcss([
-          require("postcss-import"),
-          require("postcss-nested"),
-          require("postcss-color-function"),
+          require('postcss-import')(),
+          require('postcss-for'),
+          require('postcss-simple-vars')(),
+          require('postcss-calc')(),
+          require('postcss-nested'),
+          require('postcss-color-function'),
           require('autoprefixer')()
         ]))
         .pipe(concat(bundle.name + '.css'))
