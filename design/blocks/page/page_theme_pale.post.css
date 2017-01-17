@@ -7,24 +7,6 @@ html {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
 
-  font-family:
-  /* Safari for OS X and iOS (San Francisco) */
-  -apple-system,
-  /* Chrome for OS X (San Francisco) */
-  BlinkMacSystemFont,
-  /* Windows */
-  "Segoe UI",
-  /* Android */
-  "Roboto",
-  /* Linux */
-  "Oxygen", /* KDE */
-  "Ubuntu",
-  "Cantarell", /* GNOME */
-  /* Firefox OS [R.I.P.] */
-  "Fira Sans",
-  /* Older Android */
-  "Droid Sans",
-  /* Basic web fallback */
-  "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
 }

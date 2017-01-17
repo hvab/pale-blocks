@@ -1,5 +1,3 @@
-@use postcss-pxtorem;
-
 /* Utils */
 .text_title {
   line-height: 1.1;
@@ -57,23 +55,23 @@ See: http://a11yproject.com/posts/how-to-hide-content */
 
 /* Sizes */
 .text_size_xs {
-  font-size: 12px;
+  font-size: 0.75rem; /* 12px */
 }
 
 .text_size_s {
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
 }
 
 .text_size_m {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
 }
 
 .text_size_l {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
 }
 
 .text_size_xl {
-  font-size: 34px;
+  font-size: 2.125rem; /* 34px */
 }
 
 
