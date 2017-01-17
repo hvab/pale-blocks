@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - In `button` `font` changed to `font-family` and `font-size`.
 - Rewrite `media` from `display: table` to `display: flex`.
 - Rewrite font-sizes from px to rem.
+- Improve `button`.
 
 ## [0.3.2] - 2016-12-19
 ### Changed
