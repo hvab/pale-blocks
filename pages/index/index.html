@@ -99,7 +99,38 @@
 
         <h2>table</h2>
 
-        <table class="table table_bordered table_condensed table_striped table_hover">
+        <table class="table table_theme_pale">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table_theme_pale table_bordered table_condensed table_striped table_hover">
           <colgroup>
             <col width="25%" />
             <col width="25%" />
@@ -138,10 +169,104 @@
 
         <h2>text</h2>
 
-
-        ## Примеры
-
         <div class="text text_align_center text_size_l text_color_primary text_bg_100">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</div>
+
+        <h2>content</h2>
+
+        <h1 id="h1-heading">h1 heading</h1>
+        <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <h2 id="h2-heading">h2 heading</h2>
+        <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <h3 id="h3-heading">h3 heading</h3>
+        <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <h4 id="h4-heading">h4 heading</h4>
+        <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <h5 id="h5-heading">h5 heading</h5>
+        <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <h6 id="h6-heading">h6 heading</h6>
+        <p>Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit
+            <ul>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ul>
+          </li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ul>
+
+        <ol>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit</li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ol>
+
+        <address>
+          <strong>Twitter, Inc.</strong><br>
+          1355 Market St, Suite 900<br>
+          San Francisco, CA 94103<br>
+          <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+
+        <address>
+          <strong>Full Name</strong><br>
+          <a href="mailto:#">first.last@example.com</a>
+        </address>
+
+        <blockquote class="blockquote">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+
+        <h2>text</h2>
+
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+        <p><u>This line of text will render as underlined</u></p>
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+        <p><strong>This line rendered as bold text.</strong></p>
+        <p><em>This line rendered as italicized text.</em></p>
+
+        <p class="text text_size_xs">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text text_size_s">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text text_size_m">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text text_size_l">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text text_size_xl">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+
+
+        <p class="text text_color_primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text text_color_secondary">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="text text_color_disabled">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <p class="text text_color_divider">Etiam porta sem malesuada ultricies vehicula.</p>
+
+        <p class="text text_bg_300">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text text_bg_100">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="text text_bg_50">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+
+        <p class="text text_align_left">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text text_align_center">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text text_align_right">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 
       </div>
 
