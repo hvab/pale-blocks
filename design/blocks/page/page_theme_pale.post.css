@@ -1,4 +1,7 @@
 html {
+  /* Color for overscroll. */
+  background-color: teal;
+
   font-size: 16px;
 }
 
