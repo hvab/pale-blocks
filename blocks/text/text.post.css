@@ -14,12 +14,12 @@ Requires inline-block or block for proper styling */
 
 /* CSS image replacement */
 .text_hide {
+  font: 0/0 a;
+
   color: transparent;
   border: 0;
   background-color: transparent;
   text-shadow: none;
-
-  font: 0/0 a;
 }
 
 /* Only display content to screen readers
@@ -38,7 +38,6 @@ See: http://a11yproject.com/posts/how-to-hide-content */
   border: 0;
 }
 
-
 /* Align */
 .text_align_center {
   text-align: center;
@@ -51,7 +50,6 @@ See: http://a11yproject.com/posts/how-to-hide-content */
 .text_align_right {
   text-align: right;
 }
-
 
 /* Sizes */
 .text_size_xs {
@@ -74,7 +72,6 @@ See: http://a11yproject.com/posts/how-to-hide-content */
   font-size: 2.125rem; /* 34px */
 }
 
-
 /* Colors */
 .text_color_primary {
   color: rgba(0, 0, 0, 1);
@@ -91,7 +88,6 @@ See: http://a11yproject.com/posts/how-to-hide-content */
 .text_color_divider {
   color: rgba(0, 0, 0, 0.12);
 }
-
 
 /* Background colors */
 .text_bg_300 {

@@ -4,6 +4,7 @@
   max-width: 100%;
 
   border-collapse: collapse;
+
   /* Reset for nesting within parents with `background-color`. */
   background-color: transparent;
 

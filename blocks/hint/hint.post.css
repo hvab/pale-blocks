@@ -32,6 +32,10 @@
 
   /* Tooltip body */
   &::after {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1;
+
     padding: 4px 8px;
 
     text-align: center;
@@ -40,10 +44,6 @@
     color: #fff;
     border-radius: 2px;
     background: rgba(0, 0, 0, 0.9);
-
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 1;
   }
 
   /* Always get content from aria-label attribute. */
@@ -52,7 +52,7 @@
   }
 
   /* Hide tooltips if any of the supported attributes is empty. */
-  &[aria-label='']{
+  &[aria-label=''] {
     &::before,
     &::after {
       display: none !important;
@@ -60,38 +60,37 @@
   }
 }
 
-
 /* Sizes */
 .hint_size_s,
 .hint_size_m,
 .hint_size_l {
-  &:after {
+  &::after {
+    line-height: 1.2;
+
     white-space: normal;
+
     /* Ensure long words do not overflow. */
     word-wrap: break-word;
-
-    line-height: 1.2;
   }
 }
 
 .hint_size_s {
-  &:after {
+  &::after {
     width: 80px;
   }
 }
 
 .hint_size_m {
-  &:after {
+  &::after {
     width: 160px;
   }
 }
 
 .hint_size_l {
-  &:after {
+  &::after {
     width: 320px;
   }
 }
-
 
 /* Positions */
 .hint_top {

@@ -1,15 +1,14 @@
 html {
+  font-size: 16px;
+
   /* Color for overscroll. */
   background-color: teal;
-
-  font-size: 16px;
 }
 
-
 .page_theme_pale {
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #fff;
-
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
+
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
 }

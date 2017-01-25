@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Rewrite `media` from `display: table` to `display: flex`.
 - Rewrite font-sizes from px to rem.
 - Improve `button`.
+- Update linters.
 
 ## [0.3.2] - 2016-12-19
 ### Changed

@@ -24,7 +24,6 @@
   }
 }
 
-
 /* Condensed table w/ half padding */
 .table_condensed {
   th,
@@ -32,7 +31,6 @@
     padding: 0.3rem;
   }
 }
-
 
 /* Add borders all around the table and between all the columns. */
 .table_bordered {
@@ -51,14 +49,12 @@
   }
 }
 
-
 /* Default zebra-stripe styles (alternating gray and transparent backgrounds) */
 .table_striped {
   tbody tr:nth-of-type(odd) {
     background-color: #fafafa;
   }
 }
-
 
 /* Placed here since it has to come after the potential zebra striping */
 .table_hover {
