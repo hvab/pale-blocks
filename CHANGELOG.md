@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add modifiers `link_view_minor`, `link_view_text`, `link_view_strong`.
 - Add `min-height` in themed `page`.
 - Add block `print`.
+- Add block `embed`.
 
 ### Changed
 - Move autoprefixer to package.json.

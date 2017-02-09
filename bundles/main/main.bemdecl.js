@@ -13,6 +13,7 @@ module.exports = {
     'page',
     'table',
     'text',
-    'print'
+    'print',
+    'embed'
   ]
 };
