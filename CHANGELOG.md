@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add `min-height` in themed `page`.
 - Add block `print`.
 - Add block `embed`.
+- Add block `spin`.
 
 ### Changed
 - Move autoprefixer to package.json.

@@ -14,6 +14,7 @@ module.exports = {
     'table',
     'text',
     'print',
-    'embed'
+    'embed',
+    'spin'
   ]
 };

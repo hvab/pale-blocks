@@ -1,0 +1,94 @@
+$offset: 187;
+$duration: 1.4s;
+
+.spin {
+  display: none;
+}
+
+.spin__path {
+  transform-origin: center;
+  animation:
+    spin__dash $duration ease-in-out infinite,
+    spin__colors calc($duration * 4) ease-in-out infinite;
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+}
+
+.spin_visible {
+  display: inline-block;
+
+  animation: spin__rotator $duration linear infinite;
+}
+
+@keyframes spin__rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes spin__colors {
+  0% {
+    stroke: #4285f4;
+  }
+
+  25% {
+    stroke: #de3e35;
+  }
+
+  50% {
+    stroke: #f7c223;
+  }
+
+  75% {
+    stroke: #1b9a59;
+  }
+
+  100% {
+    stroke: #4285f4;
+  }
+}
+
+@keyframes spin__dash {
+  0% {
+    stroke-dashoffset: $offset;
+  }
+
+  50% {
+    transform: rotate(135deg);
+    stroke-dashoffset: calc($offset / 4);
+  }
+
+  100% {
+    transform: rotate(450deg);
+    stroke-dashoffset: $offset;
+  }
+}
+
+.spin_size_xs {
+  width: 16px;
+  height: 16px;
+}
+
+.spin_size_s {
+  width: 24px;
+  height: 24px;
+}
+
+.spin_size_m {
+  width: 28px;
+  height: 28px;
+}
+
+.spin_size_l {
+  width: 32px;
+  height: 32px;
+}
+
+.spin_size_xl {
+  width: 38px;
+  height: 38px;
+}
