@@ -1,6 +1,8 @@
 html {
   font-size: 16px;
 
+  min-height: 100%;
+
   /* Color for overscroll. */
   background-color: teal;
 }
@@ -8,6 +10,8 @@ html {
 .page_theme_pale {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
+
+  min-height: 100%;
 
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
