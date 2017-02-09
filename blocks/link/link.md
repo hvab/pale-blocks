@@ -10,7 +10,7 @@
 | `link_disabled` | Неактивное состояние. |
 | `link_focused` | Фокус на блоке. |
 | `link_size_s`, `link_size_m`, `link_size_l` | Размер блока. |
-| `link_view_external`, `link_view_text`, `link_view_ghost` | Тип визуального выделения ссылки. |
+| `link_view_minor`, `link_view_external`, `link_view_text`, `link_view_ghost`, `link_view_strong` | Тип визуального выделения ссылки. |
 
 
 ## Примеры

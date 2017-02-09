@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add linters `.htmlhintrc`, `.stylelintrc`.
 - Add simple `grid` based on flexbox.
 - Add modifier `button_view_plain`.
+- Add modifiers `link_view_minor`, `link_view_text`, `link_view_strong`.
 
 ### Changed
 - Move autoprefixer to package.json.
