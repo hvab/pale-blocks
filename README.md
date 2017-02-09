@@ -1,30 +1,22 @@
 # pale-blocks
 
-[![GitHub Release](https://img.shields.io/github/release/palegrow/pale-blocks.svg?style=flat)](https://github.com/palegrow/pale-blocks/releases)
+> Библиотека готовых визуальных компонентов (блоков) для построения интерфейсов.
 
-## TODO
+## Блоки
 
-```css
-form
-form_inline
-form__group
-form__group_disabled
-form__hint
-Validation
-
-label
-
-input
-input_size_*
-
-input-group
-
-check
-check_inline
-
-select
-
-http://v4-alpha.getbootstrap.com/utilities/responsive-helpers/
-
-http://v4-alpha.getbootstrap.com/utilities/screenreaders/
-```
+* [button](blocks/button/button.md)
+* [clearfix](blocks/clearfix/clearfix.md)
+* [container](blocks/container/container.md)
+* [content](blocks/content/content.md)
+* [embed](blocks/embed/embed.md)
+* [grid](blocks/grid/grid.md)
+* [hint](blocks/hint/hint.md)
+* [icon](blocks/icon/icon.md)
+* [image](blocks/image/image.md)
+* [link](blocks/link/link.md)
+* [media](blocks/media/media.md)
+* [page](blocks/page/page.md)
+* [print](blocks/print/print.md)
+* [spin](blocks/spin/spin.md)
+* [table](blocks/table/table.md)
+* [text](blocks/text/text.md)
