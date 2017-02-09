@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add GitHub Release image to README.md.
 - Add linters `.htmlhintrc`, `.stylelintrc`.
 - Add simple `grid` based on flexbox.
+- Add modifier `button_view_plain`.
 
 ### Changed
 - Move autoprefixer to package.json.

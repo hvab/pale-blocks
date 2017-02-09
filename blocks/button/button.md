@@ -13,6 +13,7 @@
 | `button_size_xs`, `button_size_s`, `button_size_m`, `button_size_l`, `button_size_xl` | Размеры кнопок. |
 | `button_view_action` | Используется для визуального выделения кнопки на странице. |
 | `button_view_pseudo` | Используется для изменения внешнего вида блока при необходимости сделать кнопку менее заметной на странице. |
+| `button_view_plain` | Используется при необходимости представить кнопкой другой блок, например, иконку (icon). |
 
 
 ## Примеры
@@ -22,6 +23,8 @@
 <button type="button" class="button button_theme_pale button_view_action">Button</button>
 
 <button type="button" class="button button_theme_pale button_view_pseudo">Button</button>
+
+<button type="button" class="button button_theme_pale button_view_plain">Button plain</button>
 
 <button type="button" class="button button_theme_pale">Button</button>
 
