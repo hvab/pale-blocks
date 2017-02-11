@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add block `embed`.
 - Add block `spin`.
 - Add block `input`.
+- Add block `textarea`.
 
 ### Changed
 - Move autoprefixer to package.json.

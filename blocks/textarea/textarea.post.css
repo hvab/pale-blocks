@@ -1,0 +1,23 @@
+.textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  /* Remove the default vertical scrollbar in IE. */
+  overflow: auto;
+
+  /* Remove the margin in Firefox and Safari. */
+  margin: 0;
+
+  /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
+  resize: vertical;
+  touch-action: manipulation;
+
+  &:disabled {
+    opacity: 0.65;
+  }
+}
+
+.textarea_width_available {
+  width: 100%;
+}

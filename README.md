@@ -21,3 +21,4 @@
 * [spin](blocks/spin/spin.md)
 * [table](blocks/table/table.md)
 * [text](blocks/text/text.md)
+* [textarea](blocks/textarea/textarea.md)
