@@ -17,6 +17,7 @@ module.exports = {
     'embed',
     'spin',
     'input',
-    'textarea'
+    'textarea',
+    'select'
   ]
 };

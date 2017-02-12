@@ -18,7 +18,8 @@
 * [media](blocks/media/media.md)
 * [page](blocks/page/page.md)
 * [print](blocks/print/print.md)
-* [spin](blocks/spin/spin.md)
+* [select](blocks/select/select.md)
+* [spin](blocks/spin/spin.md) TODO: replace SVG spin with something simple.
 * [table](blocks/table/table.md)
 * [text](blocks/text/text.md)
 * [textarea](blocks/textarea/textarea.md)
