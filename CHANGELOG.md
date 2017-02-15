@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add block `textarea`.
 - Add block `select`.
 - Add block `checkbox`.
+- Add block `radio`.
 
 ### Changed
 - Move autoprefixer to package.json.

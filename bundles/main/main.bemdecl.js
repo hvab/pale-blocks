@@ -19,6 +19,7 @@ module.exports = {
     'input',
     'textarea',
     'select',
-    'checkbox'
+    'checkbox',
+    'radio'
   ]
 };
