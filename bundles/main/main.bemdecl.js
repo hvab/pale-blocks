@@ -18,6 +18,7 @@ module.exports = {
     'spin',
     'input',
     'textarea',
-    'select'
+    'select',
+    'checkbox'
   ]
 };

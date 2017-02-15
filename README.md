@@ -5,6 +5,7 @@
 ## Блоки
 
 * [button](blocks/button/button.md)
+* [checkbox](blocks/checkbox/checkbox.md)
 * [clearfix](blocks/clearfix/clearfix.md)
 * [container](blocks/container/container.md)
 * [content](blocks/content/content.md)
