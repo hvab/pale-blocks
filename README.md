@@ -4,6 +4,7 @@
 
 ## Блоки
 
+* [attach](blocks/attach/attach.md)
 * [button](blocks/button/button.md)
 * [checkbox](blocks/checkbox/checkbox.md)
 * [clearfix](blocks/clearfix/clearfix.md)

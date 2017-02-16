@@ -20,6 +20,7 @@ module.exports = {
     'textarea',
     'select',
     'checkbox',
-    'radio'
+    'radio',
+    'attach'
   ]
 };

@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add block `select`.
 - Add block `checkbox`.
 - Add block `radio`.
+- Add block `attach`.
 
 ### Changed
 - Move autoprefixer to package.json.
