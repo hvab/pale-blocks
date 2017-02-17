@@ -11,10 +11,68 @@ const flatten = require('gulp-flatten');
 const gulp = require('gulp');
 const gulpIf = require('gulp-if');
 const postcss = require('gulp-postcss');
+const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
+const processors = [
+  require('postcss-nested'),
+  require('postcss-color-function'),
+  require('autoprefixer')()
+];
+
+// Build dist
+const layer1 = bundleBuilder({
+  levels: [
+    'blocks'
+  ],
+  techMap: {
+    css: ['post.css', 'css']
+  }
+});
+
+gulp.task('buildLayer1', function() {
+  return bundlerFs('bundles/blocks')
+    .pipe(layer1({
+      css: bundle => bundle.src('css')
+        .pipe(postcss(processors))
+        .pipe(concat(bundle.name + '.css'))
+        .pipe(gulp.dest('bundles/blocks'))
+        .pipe(csso())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('bundles/blocks'))
+    }))
+    .pipe(debug());
+});
+
+const layer2 = bundleBuilder({
+  levels: [
+    'blocks',
+    'design/blocks'
+  ],
+  techMap: {
+    css: ['post.css', 'css']
+  }
+});
+
+gulp.task('buildLayer2', function() {
+  return bundlerFs('bundles/pale-blocks')
+    .pipe(layer2({
+      css: bundle => bundle.src('css')
+        .pipe(postcss(processors))
+        .pipe(concat(bundle.name + '.css'))
+        .pipe(gulp.dest('bundles/pale-blocks'))
+        .pipe(csso())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('bundles/pale-blocks'))
+    }))
+    .pipe(debug());
+});
+
+gulp.task('buildDist', gulp.parallel('buildLayer1', 'buildLayer2'));
+
+// Development
 const builder = bundleBuilder({
   levels: [
     'blocks',
@@ -30,15 +88,7 @@ gulp.task('buildCss', function() {
     .pipe(builder({
       css: bundle => bundle.src('css')
         .pipe(gulpIf(isDevelopment, sourcemaps.init()))
-        .pipe(postcss([
-          require('postcss-import')(),
-          require('postcss-for'),
-          require('postcss-simple-vars')(),
-          require('postcss-calc')(),
-          require('postcss-nested'),
-          require('postcss-color-function'),
-          require('autoprefixer')()
-        ]))
+        .pipe(postcss(processors))
         .pipe(concat(bundle.name + '.css'))
         .pipe(gulpIf(isDevelopment, sourcemaps.write('.')))
         .pipe(gulpIf(!isDevelopment, csso()))
