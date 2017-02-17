@@ -23,6 +23,7 @@ module.exports = {
     'radio',
     'attach',
     'label',
-    'fieldset'
+    'fieldset',
+    'legend'
   ]
 };

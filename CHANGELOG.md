@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add block `attach`.
 - Add block `label`.
 - Add block `fieldset`.
+- Add block `legend`.
 
 ### Changed
 - Move autoprefixer to package.json.
