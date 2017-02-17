@@ -1,6 +1,6 @@
 # pale-blocks
 
-> Библиотека готовых визуальных компонентов (блоков) для построения интерфейсов.
+> Библиотека готовых визуальных компонентов (блоков) для построения интерфейсов. Сверстано по методологии [БЭМ](//bem.info). Можно использовать для точечной нормализации стилей, а-ля normalize.css.
 
 ## Блоки
 
@@ -25,7 +25,47 @@
 * [print](blocks/print/print.md)
 * [radio](blocks/radio/radio.md)
 * [select](blocks/select/select.md)
-* [spin](blocks/spin/spin.md) TODO: replace SVG spin with something simple.
+* [spin](blocks/spin/spin.md)
 * [table](blocks/table/table.md)
 * [text](blocks/text/text.md)
 * [textarea](blocks/textarea/textarea.md)
+
+## Поддерживаемые браузеры
+
+* Firefox (две последние стабильные версии)
+* Chrome (две последние стабильные версии)
+* Safari (две последние стабильные версии)
+* Yandex (две последние стабильные версии)
+* Opera 12.1+
+* Internet Explorer 10+
+
+## Технологии
+
+* [DEPS](https://ru.bem.info/technology/deps/about/)
+* [PostCSS](http://postcss.org/)
+
+## Использование
+
+```sh
+npm i pale-blocks
+```
+
+В сборке подключить базовый уровень и, опционально, уровень с темой "pale":
+
+```js
+const builder = bundleBuilder({
+  levels: [
+    'node_modules/pale-blocks/blocks',
+    'node_modules/pale-blocks/design/blocks'
+  ],
+  techMap: {
+    css: ['post.css', 'css']
+  }
+});
+```
+
+### Обязательные плагины PostCSS при сборке
+
+* [`postcss-nested`](https://github.com/postcss/postcss-nested#readme)
+* [`postcss-color-function`](https://github.com/postcss/postcss-color-function#readme) (используется в `design/blocks`)
+* [`autoprefixer`](https://github.com/postcss/autoprefixer#readme)
