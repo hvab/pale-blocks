@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-## [0.4.0] - 2017-02-17
+## [0.5.0] - 2017-02-17
 ### Added
 - Add GitHub Release image to README.md.
 - Add linters `.htmlhintrc`, `.stylelintrc`.
