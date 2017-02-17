@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add block `checkbox`.
 - Add block `radio`.
 - Add block `attach`.
+- Add block `label`.
 
 ### Changed
 - Move autoprefixer to package.json.

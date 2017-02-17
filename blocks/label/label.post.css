@@ -1,0 +1,11 @@
+.label {
+  /* Allow labels to use `margin` for spacing. */
+  display: inline-block;
+
+  /* Avoid 300ms click delay on touch devices that support the `touch-action` CSS property. */
+  touch-action: manipulation;
+}
+
+.label_block {
+  display: block;
+}

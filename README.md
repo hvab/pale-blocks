@@ -16,6 +16,7 @@
 * [icon](blocks/icon/icon.md)
 * [image](blocks/image/image.md)
 * [input](blocks/input/input.md)
+* [label](blocks/label/label.md)
 * [link](blocks/link/link.md)
 * [media](blocks/media/media.md)
 * [page](blocks/page/page.md)
