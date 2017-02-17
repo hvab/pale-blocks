@@ -66,6 +66,16 @@ const builder = bundleBuilder({
 });
 ```
 
+### Dist-поставка
+
+Можно подключить уже собранные файлы
+
+* `node_modules/pale-blocks/bundles/blocks/blocks.css` — только блоки, без дизайна.
+* `node_modules/pale-blocks/bundles/blocks/blocks.min.css` — только блоки, без дизайна (сжатые).
+* `node_modules/pale-blocks/bundles/pale-blocks/pale-blocks.css` — блоки с дизайном `pale`.
+* `node_modules/pale-blocks/bundles/pale-blocks/pale-blocks.min.css` — блоки с дизайном `pale` (сжатые).
+
+
 ### Обязательные плагины PostCSS при сборке
 
 * [`postcss-nested`](https://github.com/postcss/postcss-nested#readme)
