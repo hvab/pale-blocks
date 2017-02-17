@@ -11,6 +11,7 @@
 * [container](blocks/container/container.md)
 * [content](blocks/content/content.md)
 * [embed](blocks/embed/embed.md)
+* [fieldset](blocks/fieldset/fieldset.md)
 * [grid](blocks/grid/grid.md)
 * [hint](blocks/hint/hint.md)
 * [icon](blocks/icon/icon.md)

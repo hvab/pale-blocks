@@ -22,6 +22,7 @@ module.exports = {
     'checkbox',
     'radio',
     'attach',
-    'label'
+    'label',
+    'fieldset'
   ]
 };

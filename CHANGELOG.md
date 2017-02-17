@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Add block `radio`.
 - Add block `attach`.
 - Add block `label`.
+- Add block `fieldset`.
 
 ### Changed
 - Move autoprefixer to package.json.
