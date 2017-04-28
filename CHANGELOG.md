@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- Add building files for distribute.
 
 ### Changed
+
+## [0.5.1] - 2017-04-28
+### Added
+- Add building files for distribute.
+- Add box-sizing to `textarea`.
 
 ## [0.5.0] - 2017-02-17
 ### Added

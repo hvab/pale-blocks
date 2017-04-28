@@ -6,6 +6,8 @@
   /* Remove the default vertical scrollbar in IE. */
   overflow: auto;
 
+  box-sizing: border-box;
+
   /* Remove the margin in Firefox and Safari. */
   margin: 0;
 
