@@ -1,68 +1,105 @@
 .content_theme_pale {
   line-height: 1.5;
 
+  address,
+  audio,
+  blockquote,
+  canvas,
+  details,
+  dl,
+  embed,
+  fieldset,
+  figure,
+  form,
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  hr,
+  iframe,
+  object,
+  ol,
+  p,
+  pre,
+  ul,
+  video {
+    margin-bottom: 1rem;
+  }
+
+  h1,
+  h2,
+  h3 {
     font-weight: 500;
     line-height: 1.1;
 
     margin-top: 2rem;
-    margin-bottom: 0.5rem;
   }
 
+  h1 + h2,
+  h2 + h3,
+  h1:first-child,
+  h2:first-child,
+  h3:first-child {
+    margin-top: 0;
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+
+  /* http://www.modularscale.com/?16&px&1.414 */
   h1 {
-    font-size: 2.25rem; /* 36px */
+    font-size: 2.827rem; /* 45.234px */
   }
 
   h2 {
-    font-size: 1.875rem; /* 30px */
+    font-size: 1.999rem; /* 31.99px */
   }
 
   h3 {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.414rem; /* 22.624px */
   }
 
-  h4 {
-    font-size: 1.125rem; /* 18px */
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    font-weight: bold;
   }
 
   h5 {
-    font-size: 0.875rem; /* 14px */
+    font-style: italic;
   }
 
   h6 {
-    font-size: 0.75rem; /* 12px */
-  }
-
-  p {
-    margin-bottom: 1rem;
-  }
-
-  address {
-    margin-bottom: 1rem;
+    font-weight: normal;
   }
 
   ol,
-  ul,
-  dl {
-    margin-bottom: 1rem;
+  ul {
+    padding-left: 2rem;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 2rem;
   }
 
   blockquote {
-    margin-bottom: 1rem;
+    margin-right: 0;
+    margin-left: 2rem;
   }
 
-  a {
-    color: #448aff;
-
-    &:hover,
-    &:focus {
-      color: color(#448aff lightness(-15%));
-    }
+  hr {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);;
   }
 
   mark {
