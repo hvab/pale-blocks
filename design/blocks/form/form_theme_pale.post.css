@@ -1,0 +1,6 @@
+.form_theme_pale {
+  .form__legend,
+  .form__field {
+    margin-bottom: 1rem;
+  }
+}

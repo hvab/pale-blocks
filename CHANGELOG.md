@@ -6,15 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- Add block `form`
 
 ### Changed
-- Improve `content` styles.
-- Move `margin: 0` from basic `page` to themed.
+- Improve `content` styles
+- Move `margin: 0` from basic `page` to themed
 
 ### Removed
-- Remove `min-height` from themed `page`.
-- Remove `background-color` from themed `page`.
-- Remove `font-family` quotes from themed `page`.
+- Remove `min-height` from themed `page`
+- Remove `background-color` from themed `page`
+- Remove `font-family` quotes from themed `page`
 
 ## [0.5.1] - 2017-04-28
 ### Added
