@@ -1,15 +1,9 @@
 .content_theme_pale {
   line-height: 1.5;
 
-  address,
-  audio,
   blockquote,
-  canvas,
   details,
   dl,
-  embed,
-  figure,
-  form,
   h1,
   h2,
   h3,
@@ -17,13 +11,10 @@
   h5,
   h6,
   hr,
-  iframe,
-  object,
   ol,
   p,
   pre,
-  ul,
-  video {
+  ul {
     margin-bottom: 1rem;
   }
 
@@ -98,7 +89,7 @@
 
   hr {
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   }
 
   mark {

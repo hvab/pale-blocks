@@ -1,13 +1,7 @@
 .content {
-  address,
-  audio,
   blockquote,
-  canvas,
   details,
   dl,
-  embed,
-  figure,
-  form,
   h1,
   h2,
   h3,
@@ -15,13 +9,10 @@
   h5,
   h6,
   hr,
-  iframe,
-  object,
   ol,
   p,
   pre,
-  ul,
-  video {
+  ul {
     margin-top: 0;
 
     &:last-child {
