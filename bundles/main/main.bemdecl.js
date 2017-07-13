@@ -1,5 +1,6 @@
 module.exports = {
   decl: [
+    'page',
     'attach',
     'button',
     'checkbox',
@@ -18,7 +19,6 @@ module.exports = {
     'legend',
     'link',
     'media',
-    'page',
     'print',
     'radio',
     'select',

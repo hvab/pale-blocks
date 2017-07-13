@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
-    "build": "NODE_ENV=production && gulp build",
-    "build-dist": "gulp buildDist"
+    "build": "NODE_ENV=production && gulp build"
   },
   "repository": {
     "type": "git",
@@ -15,9 +14,7 @@
   "author": "palegrow",
   "license": "ISC",
   "browserslist": [
-    "ie >= 10",
-    "opera 12.1",
-    "> 2%",
+    "> 1%",
     "last 2 versions"
   ],
   "bugs": {
@@ -26,21 +23,35 @@
   "homepage": "https://github.com/palegrow/pale-blocks#readme",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^6.7.3",
-    "browser-sync": "^2.18.8",
-    "del": "^2.2.2",
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-bem-bundle-builder": "^0.1.2",
+    "gulp-bem-bundle-builder": "^0.1.4",
     "gulp-bem-bundler-fs": "0.0.10",
     "gulp-concat": "^2.6.1",
-    "gulp-csso": "^2.0.0",
+    "gulp-csso": "^3.0.0",
     "gulp-debug": "^3.1.0",
     "gulp-flatten": "^0.3.1",
     "gulp-if": "^2.0.2",
-    "gulp-postcss": "^6.3.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.4.1",
-    "postcss-color-function": "^3.0.0",
-    "postcss-nested": "^1.0.0"
+    "gulp-imagemin": "^3.3.0",
+    "gulp-include": "^2.3.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-nunjucks-html": "^2.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-typograf": "^3.0.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss-calc": "^6.0.0",
+    "postcss-color-function": "^4.0.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.0.2",
+    "postcss-reporter": "^4.0.0",
+    "postcss-simple-vars": "^4.0.0",
+    "postcss-url": "^7.0.0",
+    "posthtml-alt-always": "^1.0.1",
+    "posthtml-minifier": "^0.1.0"
   }
 }
