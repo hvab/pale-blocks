@@ -14,6 +14,7 @@
 * [content](blocks/content/content.md)
 * [embed](blocks/embed/embed.md)
 * [fieldset](blocks/fieldset/fieldset.md)
+* [form](blocks/form/form.md)
 * [grid](blocks/grid/grid.md)
 * [hint](blocks/hint/hint.md)
 * [icon](blocks/icon/icon.md)
