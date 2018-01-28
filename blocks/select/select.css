@@ -1,0 +1,21 @@
+.select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  /* Remove the margin in Firefox and Safari. */
+  margin: 0;
+
+  touch-action: manipulation;
+
+  /* Remove the inheritance of text transform in Firefox. */
+  text-transform: none;
+}
+
+  .select:disabled {
+    opacity: 0.65;
+  }
+
+.select_width_available {
+  width: 100%;
+}

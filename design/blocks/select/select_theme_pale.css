@@ -1,0 +1,32 @@
+.select_theme_pale {
+  vertical-align: middle;
+}
+
+  .select_theme_pale[multiple] {
+    padding: 0.5em;
+
+    border: 1px solid teal;
+    border-radius: 2px;
+  }
+
+/* Sizes */
+
+.select_size_xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.select_size_s {
+  font-size: 0.875rem; /* 14px */
+}
+
+.select_size_m {
+  font-size: 1.25rem; /* 20px */
+}
+
+.select_size_l {
+  font-size: 1.5rem; /* 24px */
+}
+
+.select_size_xl {
+  font-size: 2.125rem; /* 34px */
+}

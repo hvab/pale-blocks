@@ -13,6 +13,7 @@ const gulpIf = require('gulp-if');
 const imagemin = require('gulp-imagemin');
 const include = require('gulp-include');
 const notify = require('gulp-notify');
+const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 
@@ -83,6 +84,26 @@ gulp.task('bemCss', function() {
     }))
     .pipe(debug({title: 'bemCss:'}))
     .pipe(gulp.dest(DEST));
+});
+
+gulp.task('buildCss', function() {
+  return gulp.src([
+    'blocks/**/*.post.css',
+    'design/blocks/**/*.post.css',
+  ], { base: './' })
+    .pipe(postcss([
+      postcssImport(),
+      postcssFor,
+      postcssSimpleVars(),
+      postcssCalc(),
+      postcssNested,
+      postcssColorFunction,
+      postcssReporter()
+    ]))
+    .pipe(rename(function(path) {
+      path.basename = path.basename.split('.')[0];
+    }))
+    .pipe(gulp.dest('.'));
 });
 
 gulp.task('bemJs', function() {

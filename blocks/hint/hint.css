@@ -1,0 +1,107 @@
+.hint {
+  position: relative;
+
+  display: inline-block;
+}
+
+  .hint::after {
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    left: 50%;
+
+    display: inline-block;
+    visibility: hidden;
+
+    content: "";
+    transition-delay: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.2s;
+    transform: translateX(-50%) translateY(4px);
+    pointer-events: none;
+
+    opacity: 0;
+  }
+
+  .hint:hover::after {
+    visibility: visible;
+
+    transition-delay: 100ms;
+
+    opacity: 1;
+  }
+
+  /* Tooltip body */
+
+  .hint::after {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1;
+
+    padding: 4px 8px;
+
+    text-align: center;
+    white-space: nowrap;
+
+    color: #fff;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  /* Always get content from aria-label attribute. */
+
+  .hint[aria-label]::after {
+    content: attr(aria-label);
+  }
+
+  /* Hide tooltips if any of the supported attributes is empty. */
+
+  .hint[aria-label='']::before,
+    .hint[aria-label='']::after {
+      display: none !important;
+    }
+
+/* Sizes */
+
+.hint_size_s::after, .hint_size_m::after, .hint_size_l::after {
+    line-height: 1.2;
+
+    white-space: normal;
+
+    /* Ensure long words do not overflow. */
+    word-wrap: break-word;
+  }
+
+.hint_size_s::after {
+    width: 80px;
+  }
+
+.hint_size_m::after {
+    width: 160px;
+  }
+
+.hint_size_l::after {
+    width: 320px;
+  }
+
+/* Positions */
+
+.hint_top::after {
+    top: auto;
+    bottom: 100%;
+  }
+
+.hint_right::after {
+    top: 50%;
+    left: 100%;
+
+    transform: translateX(4px) translateY(-50%);
+  }
+
+.hint_left::after {
+    top: 50%;
+    right: 100%;
+    left: auto;
+
+    transform: translateX(-4px) translateY(-50%);
+  }

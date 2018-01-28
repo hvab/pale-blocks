@@ -1,0 +1,42 @@
+.content address,
+  .content blockquote,
+  .content details,
+  .content dl,
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6,
+  .content hr,
+  .content ol,
+  .content p,
+  .content pre,
+  .content ul {
+    margin-top: 0;
+  }
+
+    .content address:last-child, .content blockquote:last-child, .content details:last-child, .content dl:last-child, .content h1:last-child, .content h2:last-child, .content h3:last-child, .content h4:last-child, .content h5:last-child, .content h6:last-child, .content hr:last-child, .content ol:last-child, .content p:last-child, .content pre:last-child, .content ul:last-child {
+      margin-bottom: 0;
+    }
+  .content a {
+    touch-action: manipulation;
+  }
+  .content sub,
+  .content sup {
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    vertical-align: baseline;
+  }
+  .content sub {
+    bottom: -0.25em;
+  }
+  .content sup {
+    top: -0.5em;
+  }
+  .content small {
+    font-size: 80%;
+  }

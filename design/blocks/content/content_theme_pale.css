@@ -1,0 +1,102 @@
+.content_theme_pale {
+  line-height: 1.5;
+}
+
+  .content_theme_pale address,
+  .content_theme_pale blockquote,
+  .content_theme_pale details,
+  .content_theme_pale dl,
+  .content_theme_pale h1,
+  .content_theme_pale h2,
+  .content_theme_pale h3,
+  .content_theme_pale h4,
+  .content_theme_pale h5,
+  .content_theme_pale h6,
+  .content_theme_pale hr,
+  .content_theme_pale ol,
+  .content_theme_pale p,
+  .content_theme_pale pre,
+  .content_theme_pale ul {
+    margin-bottom: 1rem;
+  }
+
+  .content_theme_pale h1,
+  .content_theme_pale h2,
+  .content_theme_pale h3 {
+    font-weight: 500;
+    line-height: 1.1;
+
+    margin-top: 2rem;
+  }
+
+  .content_theme_pale h1 + h2,
+  .content_theme_pale h2 + h3,
+  .content_theme_pale h1:first-child,
+  .content_theme_pale h2:first-child,
+  .content_theme_pale h3:first-child {
+    margin-top: 0;
+  }
+
+  .content_theme_pale h4,
+  .content_theme_pale h5,
+  .content_theme_pale h6 {
+    margin-bottom: 0;
+  }
+
+  /* http://www.modularscale.com/?16&px&1.414 */
+
+  .content_theme_pale h1 {
+    font-size: 2.827rem; /* 45.234px */
+  }
+
+  .content_theme_pale h2 {
+    font-size: 1.999rem; /* 31.99px */
+  }
+
+  .content_theme_pale h3 {
+    font-size: 1.414rem; /* 22.624px */
+  }
+
+  .content_theme_pale h4,
+  .content_theme_pale h5,
+  .content_theme_pale h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .content_theme_pale h5 {
+    font-style: italic;
+  }
+
+  .content_theme_pale h6 {
+    font-weight: normal;
+  }
+
+  .content_theme_pale ol,
+  .content_theme_pale ul {
+    padding-left: 2rem;
+  }
+
+  .content_theme_pale dt {
+    font-weight: bold;
+  }
+
+  .content_theme_pale dd {
+    margin-left: 2rem;
+  }
+
+  .content_theme_pale blockquote {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+
+  .content_theme_pale hr {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .content_theme_pale mark {
+    padding: 0.2em;
+
+    background-color: #fcf8e3;
+  }

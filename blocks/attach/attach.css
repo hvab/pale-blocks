@@ -1,0 +1,29 @@
+.attach {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  /* Show the overflow in Edge. */
+  overflow: visible;
+
+  box-sizing: border-box;
+
+  /* Remove the margin in Firefox and Safari. */
+  margin: 0;
+
+  touch-action: manipulation;
+
+  color: inherit;
+}
+
+  .attach::-webkit-file-upload-button {
+    -webkit-appearance: button;
+  }
+
+  .attach:disabled {
+    opacity: 0.65;
+  }
+
+.attach_width_available {
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  /* Show the overflow in Edge. */
+  overflow: visible;
+
+  box-sizing: border-box;
+  margin: 0;
+
+  touch-action: manipulation;
+
+  /* Remove the inheritance of text transform in Edge, Firefox, and IE. */
+  text-transform: none;
+
+  color: inherit;
+}
+
+  /* Remove the inner border and padding in Firefox. */
+
+  .button::-moz-focus-inner {
+    padding: 0;
+
+    border-style: none;
+  }
+
+  /* Restore the focus styles unset by the previous rule. */
+
+  .button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  .button:disabled {
+    opacity: 0.65;
+  }
+
+  .button:focus {
+    outline-offset: -2px;
+  }
+
+.button_type_link {
+  display: inline-block;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.button_block {
+  display: block;
+
+  width: 100%;
+}
