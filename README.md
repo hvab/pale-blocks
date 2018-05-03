@@ -72,3 +72,17 @@ const builder = bundleBuilder({
 * [`postcss-nested`](https://github.com/postcss/postcss-nested#readme)
 * [`postcss-color-function`](https://github.com/postcss/postcss-color-function#readme) (используется в `design/blocks`)
 * [`autoprefixer`](https://github.com/postcss/autoprefixer#readme)
+
+## Разработка
+
+Запуск разработки
+
+```sh
+npm start
+```
+
+Создание ванильных css-файлов
+
+```sh
+gulp buildCss
+```
