@@ -2,3 +2,8 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+/* Themed */
+.container_theme_pale {
+  max-width: 35rem;
+}

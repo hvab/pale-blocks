@@ -3,38 +3,42 @@
   line-height: 1.1;
 }
 
+.text_paragraph {
+  margin-bottom: 1rem;
+}
+
+.text_padded {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
 /* Text truncate
 Requires inline-block or block for proper styling */
 .text_truncate {
   overflow: hidden;
-
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* CSS image replacement */
 .text_hide {
   font: 0/0 a;
-
-  color: transparent;
-  border: 0;
-  background-color: transparent;
   text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+  border: 0;
 }
 
 /* Only display content to screen readers
 See: http://a11yproject.com/posts/how-to-hide-content */
 .text_sr {
   position: absolute;
-
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
   border: 0;
 }
 

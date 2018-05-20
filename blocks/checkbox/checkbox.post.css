@@ -1,25 +1,13 @@
 .checkbox {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
-
-  /* Show the overflow in Edge. */
-  overflow: visible;
-
-  /* Add the correct box sizing in IE 10-. */
-  box-sizing: border-box;
-
-  /* Remove the margin in Firefox and Safari. */
-  margin: 0;
-
-  /* Remove the padding in IE 10-. */
-  padding: 0;
-
-  touch-action: manipulation;
-
+  line-height: 1;
   color: inherit;
 
   &:disabled {
-    opacity: 0.65;
+    cursor: not-allowed;
   }
 }

@@ -8,7 +8,7 @@
 |-------------|----------|
 | `button_type_link` | Используется с тегом `a`. |
 | `button_type_submit` | Используется для создания кнопки, обеспечивающей отправку данных на сервер. Кнопка такого типа всегда должна располагаться в форме. |
-| `button_block` | Используется, когда надо сделать кнопку блочным элементом во всю ширину контейнера. |
+| `button_width_available` | Используется, когда надо сделать кнопку во всю ширину контейнера. |
 | `button_theme_pale` | Для группировки стилевого оформления кнопок. |
 | `button_size_xs`, `button_size_s`, `button_size_m`, `button_size_l`, `button_size_xl` | Размеры кнопок. |
 | `button_view_action` | Используется для визуального выделения кнопки на странице. |
@@ -22,13 +22,11 @@
 ```html
 <button type="button" class="button button_theme_pale button_view_action">Button</button>
 
-<button type="button" class="button button_theme_pale button_view_pseudo">Button</button>
-
 <button type="button" class="button button_theme_pale button_view_plain">Button plain</button>
 
 <button type="button" class="button button_theme_pale">Button</button>
 
-<a href="" class="button button_type_link button_theme_pale">Button</a>
+<button type="button" class="button button_width_available button_theme_pale button_view_action">Button block</button>
 ```
 
 ### Размеры

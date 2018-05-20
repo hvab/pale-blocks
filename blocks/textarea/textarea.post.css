@@ -1,25 +1,47 @@
 .textarea {
+  resize: vertical;
+  box-sizing: border-box;
+  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-
-  /* Remove the default vertical scrollbar in IE. */
-  overflow: auto;
-
-  box-sizing: border-box;
-
-  /* Remove the margin in Firefox and Safari. */
-  margin: 0;
-
-  /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
-  resize: vertical;
-  touch-action: manipulation;
+  color: inherit;
 
   &:disabled {
-    opacity: 0.65;
+    cursor: not-allowed;
   }
 }
 
 .textarea_width_available {
   width: 100%;
+}
+
+/* Themed */
+.textarea_theme_pale {
+  padding: 0.5em;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #4db6ac;
+  border-radius: 2px;
+}
+
+/* Sizes */
+.textarea_size_xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.textarea_size_s {
+  font-size: 0.875rem; /* 14px */
+}
+
+.textarea_size_m {
+  font-size: 1.25rem; /* 20px */
+}
+
+.textarea_size_l {
+  font-size: 1.5rem; /* 24px */
+}
+
+.textarea_size_xl {
+  font-size: 2.125rem; /* 34px */
 }

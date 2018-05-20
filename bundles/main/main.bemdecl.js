@@ -11,7 +11,6 @@ module.exports = {
     'fieldset',
     'form',
     'grid',
-    'hint',
     'icon',
     'image',
     'input',

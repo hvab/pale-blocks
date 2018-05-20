@@ -35,7 +35,7 @@
         <h2>media</h2>
 
         <div class="media">
-          <div class="media__object"><img src="#" width="50" height="50" alt="image"></div>
+          <div class="media__object"><img src="http://via.placeholder.com/100x100" width="100" height="100" alt="image"></div>
           <div class="media__body">
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
@@ -45,7 +45,7 @@
           <div class="media__body">
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
-          <div class="media__object media__object_align_middle"><img src="#" width="50" height="50" alt="image"></div>
+          <div class="media__object media__object_align_middle"><img src="http://via.placeholder.com/100x100" width="100" height="100" alt="image"></div>
         </div>
 
         <h2>button</h2>
@@ -57,17 +57,21 @@
 
           <button type="button" class="button button_theme_pale">Button themed</button>
 
-          <a href="" class="button button_type_link">Button link</a>
+          <a href="" class="button">Button link</a>
 
-          <a href="" class="button button_type_link button_theme_pale">Button link themed</a>
+          <a href="" class="button button_theme_pale">Button link themed</a>
         </p>
 
         <p>
           <button type="button" class="button button_theme_pale button_view_action">Button action</button>
 
-          <button type="button" class="button button_theme_pale button_view_pseudo">Button pseudo</button>
+          <button type="button" class="button button_theme_pale button_view_action" disabled>Button action</button>
 
-          <button type="button" class="button button_theme_pale button_view_plain">Button plain</button>
+          <button type="button" class="button button_view_plain">Button plain</button>
+        </p>
+
+        <p>
+          <button type="button" class="button button_width_available button_theme_pale button_view_action">Button block</button>
         </p>
 
         <p>
@@ -79,29 +83,9 @@
           <button type="button" class="button button_theme_pale button_view_action button_size_xl">Button xl</button>
         </p>
 
-        <h2>hint</h2>
-
-        <p>
-          <span class="hint" aria-label="Thank you!">Hint bottom</span>
-
-          <span class="hint hint_top" aria-label="Thank you!">Hint top</span>
-
-          <span class="hint hint_right" aria-label="Thank you!">Hint right</span>
-
-          <span class="hint hint_left" aria-label="Thank you!">Hint left</span>
-        </p>
-
-        <p>
-          <span class="hint hint_size_s" aria-label="Thank you! Adding a hint--bounce class gives you that...">Hint small</span>
-
-          <span class="hint hint_size_m" aria-label="Thank you! Adding a hint--bounce class gives you that...">Hint medium</span>
-
-          <span class="hint hint_size_l" aria-label="Thank you! Adding a hint--bounce class gives you that...">Hint large</span>
-        </p>
-
         <h2>table</h2>
 
-        <table class="table table_theme_pale">
+        <table class="table">
           <thead>
             <tr>
               <th>#</th>
@@ -169,9 +153,50 @@
           </tbody>
         </table>
 
+        <table class="table table_theme_pale table_borderless table_striped table_hover">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
         <h2>text</h2>
 
-        <div class="text text_align_center text_size_l text_color_primary text_bg_100">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</div>
+        <p class="text text_align_center text_size_l text_color_primary text_bg_100 text_padded">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+
+        <p class="text text_bg_300 text_padded">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+
+        <p class="text text_bg_50 text_padded">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
 
         <h2>content</h2>
 
@@ -272,7 +297,7 @@
 
         <h2>embed</h2>
 
-        <div class="embed embed_ratio_16by9">
+        <div class="embed embed_ratio_16by9 text text_paragraph">
           <iframe class="embed__object" src="//www.youtube.com/embed/FnzHOsiaJns?rel=0" allowfullscreen></iframe>
         </div>
 

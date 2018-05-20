@@ -2,12 +2,6 @@
 
 Блок-контейнер для текстов. По-умолчанию выравниваются отступы.
 
-## Модификаторы блока
-
-| Модификатор | Описание |
-|-------------|----------|
-| `content_theme_pale` | Для группировки стилевого оформления блока. |
-
 ## Примеры
 
 ```html
@@ -26,6 +20,6 @@
   <p><u>This line of text will render as underlined</u></p>
   <p><small>This line of text is meant to be treated as fine print.</small></p>
   <p><strong>This line rendered as bold text.</strong></p>
-  <p><em>This line rendered as italicized text.</em></p>  
+  <p><em>This line rendered as italicized text.</em></p>
 </div>
 ```

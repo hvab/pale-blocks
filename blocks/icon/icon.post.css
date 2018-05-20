@@ -1,14 +1,11 @@
 .icon {
   display: inline-block;
-
   text-align: center;
-
   background: 50% no-repeat;
 
   /* Hack for correct baseline positioning */
   &:empty::after {
     visibility: hidden;
-
     content: '\00A0';
   }
 
@@ -20,7 +17,6 @@
   & > svg {
     /* 0.15 — magic number, empirically found */
     margin: -5.15em 0 -5em;
-
     vertical-align: middle;
   }
 }
