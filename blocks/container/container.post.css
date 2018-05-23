@@ -1,9 +1,23 @@
 .container {
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
 }
 
-/* Themed */
-.container_theme_pale {
-  max-width: 35rem;
+.container_align_center {
+  margin: auto;
+}
+
+.container_size_full {
+  max-width: 100%;
+}
+
+.container_size_m {
+  max-width: 1144px;
+}
+
+.container_size_s {
+  max-width: 880px;
+}
+
+.container_size_xs {
+  max-width: 560px;
 }
