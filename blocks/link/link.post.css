@@ -1,3 +1,3 @@
-.link {
-  touch-action: manipulation;
+.link_disabled {
+  cursor: not-allowed;
 }

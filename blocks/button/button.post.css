@@ -36,7 +36,7 @@ button:-moz-focusring,
 
   /* Remove the inheritance of text transform in Edge and Firefox. */
   text-transform: none;
-  line-height: 1;
+  line-height: inherit;
   user-select: none;
   color: inherit;
 
@@ -53,6 +53,27 @@ button:-moz-focusring,
   padding: 0;
   background: none;
   border: 0;
+}
+
+/* Sizes */
+.button_size_xs {
+  font-size: 0.75rem; /* 12px */
+}
+
+.button_size_s {
+  font-size: 0.875rem; /* 14px */
+}
+
+.button_size_m {
+  font-size: 1.25rem; /* 20px */
+}
+
+.button_size_l {
+  font-size: 1.5rem; /* 24px */
+}
+
+.button_size_xl {
+  font-size: 2.125rem; /* 34px */
 }
 
 /* Themed */
@@ -76,25 +97,4 @@ button:-moz-focusring,
       background-color: #00867d;
     }
   }
-}
-
-/* Sizes */
-.button_size_xs {
-  font-size: 0.75rem; /* 12px */
-}
-
-.button_size_s {
-  font-size: 0.875rem; /* 14px */
-}
-
-.button_size_m {
-  font-size: 1.25rem; /* 20px */
-}
-
-.button_size_l {
-  font-size: 1.5rem; /* 24px */
-}
-
-.button_size_xl {
-  font-size: 2.125rem; /* 34px */
 }

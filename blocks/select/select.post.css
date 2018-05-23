@@ -6,7 +6,7 @@
 
   /* Remove the inheritance of text transform in Firefox. */
   text-transform: none;
-  line-height: 1;
+  line-height: inherit;
   color: inherit;
 
   &:disabled {
@@ -16,24 +16,6 @@
 
 .select_width_available {
   width: 100%;
-}
-
-/* Themed */
-.select_theme_pale {
-  padding: 0.5em 2em 0.5em 0.5em;
-  vertical-align: middle;
-  background: #fff url("select_theme_pale.svg") no-repeat right 0.5em center;
-  background-size: 1.3em;
-  border: 1px solid #4db6ac;
-  border-radius: 2px;
-  appearance: none;
-
-  &[multiple] {
-    padding: 0.5em;
-    background-image: none;
-    border: 1px solid #4db6ac;
-    border-radius: 2px;
-  }
 }
 
 /* Sizes */
@@ -55,4 +37,22 @@
 
 .select_size_xl {
   font-size: 2.125rem; /* 34px */
+}
+
+/* Themed */
+.select_theme_pale {
+  padding: 0.5em 2em 0.5em 0.5em;
+  vertical-align: middle;
+  background: #fff url("select_theme_pale.svg") no-repeat right 0.5em center;
+  background-size: 1.3em;
+  border: 1px solid #4db6ac;
+  border-radius: 2px;
+  appearance: none;
+
+  &[multiple] {
+    padding: 0.5em;
+    background-image: none;
+    border: 1px solid #4db6ac;
+    border-radius: 2px;
+  }
 }

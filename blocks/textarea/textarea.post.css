@@ -16,15 +16,6 @@
   width: 100%;
 }
 
-/* Themed */
-.textarea_theme_pale {
-  padding: 0.5em;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #4db6ac;
-  border-radius: 2px;
-}
-
 /* Sizes */
 .textarea_size_xs {
   font-size: 0.75rem; /* 12px */
@@ -44,4 +35,13 @@
 
 .textarea_size_xl {
   font-size: 2.125rem; /* 34px */
+}
+
+/* Themed */
+.textarea_theme_pale {
+  padding: 0.5em;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #4db6ac;
+  border-radius: 2px;
 }

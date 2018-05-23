@@ -1,7 +1,8 @@
 .icon {
   display: inline-block;
   text-align: center;
-  background: 50% no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 
   /* Hack for correct baseline positioning */
   &:empty::after {

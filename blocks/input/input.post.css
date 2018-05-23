@@ -1,20 +1,3 @@
-.input {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 1;
-  color: inherit;
-
-  &:disabled {
-    cursor: not-allowed;
-  }
-}
-
-.input_width_available {
-  width: 100%;
-}
-
 /* Correct the cursor style of increment and decrement buttons in Chrome. */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
@@ -35,13 +18,21 @@
   -webkit-appearance: none;
 }
 
-/* Themed */
-.input_theme_pale {
-  padding: 0.5em;
-  vertical-align: middle;
-  background-color: #fff;
-  border: 1px solid #4db6ac;
-  border-radius: 2px;
+.input {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.input_width_available {
+  width: 100%;
 }
 
 /* Sizes */
@@ -63,4 +54,13 @@
 
 .input_size_xl {
   font-size: 2.125rem; /* 34px */
+}
+
+/* Themed */
+.input_theme_pale {
+  padding: 0.5em;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #4db6ac;
+  border-radius: 2px;
 }
