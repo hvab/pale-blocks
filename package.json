@@ -23,10 +23,10 @@
   "homepage": "https://github.com/palegrow/pale-blocks#readme",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
-    "browser-sync": "^2.24.3",
+    "autoprefixer": "^8.5.2",
+    "browser-sync": "^2.24.4",
     "del": "^3.0.0",
-    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp": "^4.0.0",
     "gulp-bem-bundle-builder": "^0.1.5",
     "gulp-bem-bundler-fs": "0.0.10",
     "gulp-concat": "^2.6.1",
@@ -41,10 +41,11 @@
     "gulp-one-of": "^1.0.1",
     "gulp-postcss": "^7.0.1",
     "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.2.3",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-typograf": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "highlight.js": "^9.12.0",
     "postcss-calc": "^6.0.1",
     "postcss-color-function": "^4.0.1",
     "postcss-for": "^2.1.1",
@@ -54,6 +55,7 @@
     "postcss-simple-vars": "^4.1.0",
     "postcss-url": "^7.3.2",
     "posthtml-alt-always": "^1.0.1",
+    "posthtml-md": "^1.1.0",
     "posthtml-minifier": "^0.1.0"
   }
 }

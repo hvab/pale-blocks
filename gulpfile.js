@@ -34,16 +34,18 @@ const nunjucks = require('gulp-nunjucks-html');
 const posthtml = require('gulp-posthtml');
 const posthtmlAltAlways = require('posthtml-alt-always');
 const posthtmlMinifier = require('posthtml-minifier');
+const posthtmlMd = require('posthtml-md');
 const typograf = require('gulp-typograf');
 
 const browserSync = require('browser-sync').create();
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
-const DEST = 'dist';
+const DEST = 'docs';
 
 const builder = bundleBuilder({
   levels: [
     'blocks',
+    'demo'
   ],
   techMap: {
     css: ['post.css', 'css'],
@@ -90,7 +92,7 @@ gulp.task('bemCss', function() {
 gulp.task('buildCss', function() {
   return gulp.src([
     'blocks/**/*.post.css',
-    'design/blocks/**/*.post.css',
+    'demo/**/*.post.css',
   ], { base: './' })
     .pipe(postcss([
       postcssImport(),
@@ -148,18 +150,14 @@ gulp.task('buildHtml', function() {
         sound: 'Blow'
       };
     }))
-    .pipe(typograf({
-      locale: ['ru', 'en-US'],
-      mode: 'digit'
-    }))
-    .pipe(gulpIf(!isDevelopment, posthtml([
-      posthtmlAltAlways(),
-      posthtmlMinifier({
-        removeComments: true,
-        collapseWhitespace: true,
-        minifyJS: true
+    .pipe(posthtml([
+      posthtmlMd({
+        headerIds: false,
+        highlight: function(code) {
+          return require('highlight.js').highlightAuto(code).value;
+        },
       })
-    ])))
+    ]))
     .pipe(flatten())
     .pipe(debug({title: 'buildHtml:'}))
     .pipe(gulp.dest(DEST));
@@ -183,18 +181,19 @@ gulp.task('build', gulp.series(
 gulp.task('watch', function() {
   gulp.watch([
     'blocks/**/*.deps.js',
-    'design/blocks/**/*.deps.js',
+    'demo/**/*.deps.js',
     'bundles/**/*.bemdecl.js'
   ], gulp.parallel('bemCss', 'bemJs', 'bemImage'));
 
   gulp.watch([
     'pages/**/*.html',
-    'templates/**/*.html'
+    'templates/**/*.html',
+    'blocks/**/*.md'
   ], gulp.series('buildHtml'));
 
   gulp.watch([
     'blocks/**/*.css',
-    'design/blocks/**/*.css'
+    'demo/**/*.css'
   ], gulp.series('bemCss'));
 
   gulp.watch('assets/**/*.*', gulp.series('buildAssets'));
