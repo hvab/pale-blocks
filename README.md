@@ -16,7 +16,6 @@
 * [fieldset](blocks/fieldset/fieldset.md)
 * [form](blocks/form/form.md)
 * [grid](blocks/grid/grid.md)
-* [hint](blocks/hint/hint.md)
 * [icon](blocks/icon/icon.md)
 * [image](blocks/image/image.md)
 * [input](blocks/input/input.md)
@@ -35,31 +34,18 @@
 
 ## Поддерживаемые браузеры
 
-* Firefox (две последние стабильные версии)
-* Chrome (две последние стабильные версии)
-* Safari (две последние стабильные версии)
-* Yandex (две последние стабильные версии)
-* Opera 12.1+
-* Internet Explorer 10+
-
-## Технологии
-
-* [DEPS](https://ru.bem.info/technology/deps/about/)
-* [PostCSS](http://postcss.org/)
+`>1%, last 2 versions`
 
 ## Использование
 
-```sh
-npm i pale-blocks
-```
+Скачать последнюю версию репозитория и скопировать в свой проект.
 
-В сборке подключить базовый уровень и, опционально, уровень с темой "pale":
+В сборке можно использовать так:
 
 ```js
 const builder = bundleBuilder({
   levels: [
-    'node_modules/pale-blocks/blocks',
-    'node_modules/pale-blocks/design/blocks'
+    'pale-blocks/blocks',
   ],
   techMap: {
     css: ['post.css', 'css']
@@ -70,7 +56,6 @@ const builder = bundleBuilder({
 ### Обязательные плагины PostCSS при сборке
 
 * [`postcss-nested`](https://github.com/postcss/postcss-nested#readme)
-* [`postcss-color-function`](https://github.com/postcss/postcss-color-function#readme) (используется в `design/blocks`)
 * [`autoprefixer`](https://github.com/postcss/autoprefixer#readme)
 
 ## Разработка
@@ -85,4 +70,10 @@ npm start
 
 ```sh
 gulp buildCss
+```
+
+Сборка документации
+
+```sh
+npm run build
 ```
