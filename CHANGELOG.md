@@ -4,13 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.7.0] - 2018-06-02
+- Refactor all blocks
+
+## [0.6.1] - 2018-05-03
 ### Added
 - Add block `form`
 
 ### Changed
 - Improve `content` styles
 - Move `margin: 0` from basic `page` to themed
+- Update deps
 
 ### Removed
 - Remove `min-height` from themed `page`
