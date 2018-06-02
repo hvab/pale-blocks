@@ -79,7 +79,7 @@
   overflow-x: auto;
   box-sizing: border-box;
   margin-top: 1.5rem;
-  padding: 0.5rem;
+  padding: 2rem 0.5rem 0.5rem;
   border: 2px solid #f0f4c3;
 
   &:not(:last-child) {
@@ -88,8 +88,8 @@
 
   &::before {
     position: absolute;
-    bottom: 100%;
-    left: -2px;
+    top: 0;
+    left: 0;
     display: block;
     box-sizing: border-box;
     padding: 4px;
