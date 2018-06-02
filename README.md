@@ -1,5 +1,7 @@
 # pale-blocks
 
+Small CSS framework charged with BEM
+
 [![GitHub Release](https://img.shields.io/github/release/palegrow/pale-blocks.svg?style=flat)](https://github.com/palegrow/pale-blocks/releases)
 
 > Библиотека готовых визуальных компонентов (блоков) для построения интерфейсов. Сверстано по методологии [БЭМ](//bem.info). Можно использовать для точечной нормализации стилей, а-ля normalize.css.
