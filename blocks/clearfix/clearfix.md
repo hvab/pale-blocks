@@ -7,8 +7,7 @@
 
 ```html
 <div class="clearfix">
-  <div></div>
-  <div></div>
-  <div></div>
+  <div style="float: left;"></div>
+  <div style="float: right;"></div>
 </div>
 ```

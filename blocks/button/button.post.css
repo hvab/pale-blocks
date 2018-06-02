@@ -41,7 +41,8 @@ button:-moz-focusring,
   color: inherit;
 
   &:disabled {
-    cursor: not-allowed;
+    cursor: default;
+    pointer-events: none;
   }
 }
 
@@ -78,6 +79,7 @@ button:-moz-focusring,
 
 /* Themed */
 .button_theme_pale {
+  cursor: pointer;
   padding: 0.5em 1em;
   vertical-align: middle;
   text-align: center;
@@ -85,6 +87,17 @@ button:-moz-focusring,
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 2px;
+
+  &.button_raised {
+    box-shadow:
+      0 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+    &:disabled {
+      box-shadow: unset;
+    }
+  }
 
   &.button_view_action {
     color: #000;
@@ -96,5 +109,40 @@ button:-moz-focusring,
       color: #000;
       background-color: #00867d;
     }
+
+    &:disabled {
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &.button_view_outline {
+    color: #00867d;
+    border-color: #4db6ac;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #00867d;
+      border-color: #00867d;
+    }
+
+    &:disabled {
+      border-color: rgba(0, 0, 0, 0.37);
+    }
+  }
+
+  &.button_view_text {
+    color: #00867d;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #00867d;
+      background-color: rgba(0, 134, 125, 0.1);
+    }
+  }
+
+  &:disabled {
+    color: rgba(0, 0, 0, 0.37);
   }
 }

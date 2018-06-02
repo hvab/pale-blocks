@@ -15,7 +15,7 @@
 ### Обычное расположение
 ```html
 <div class="media">
-  <div class="media__object"><img src="" width="50" height="50" alt="image"></div>
+  <div class="media__object"><img src="http://via.placeholder.com/100x100" width="100" height="100" alt="image"></div>
   <div class="media__body">
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
@@ -28,6 +28,6 @@
   <div class="media__body">
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
-  <div class="media__object media__object_align_middle"><img src="" width="50" height="50" alt="image"></div>
+  <div class="media__object media__object_align_middle"><img src="http://via.placeholder.com/100x100" width="100" height="100" alt="image"></div>
 </div>
 ```

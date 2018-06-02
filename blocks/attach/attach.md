@@ -11,13 +11,12 @@
 
 ## Примеры
 
-### Типы
 ```html
-<input type="file" class="attach attach_theme_pale">
-<input type="file" class="attach attach_theme_pale" disabled>
-```
+<p>
+  <input type="file" class="attach attach_width_available">
+</p>
 
-### Ширина
-```html
-<input type="file" class="attach attach_width_available attach_theme_pale">
+<p>
+  <input type="file" class="attach" disabled>
+</p>
 ```

@@ -1,3 +1,13 @@
+.link_view_text {
+  color: inherit;
+}
+
+.link_pseudo {
+  text-decoration-style: dotted;
+}
+
 .link_disabled {
-  cursor: not-allowed;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.37);
+  pointer-events: none;
 }

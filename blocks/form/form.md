@@ -25,7 +25,7 @@
 ## Примеры
 
 ```html
-<form class="form form_theme_pale" action="" method="post" name="form" id="form" autocomplete="on" enctype="multipart/form-data" novalidate>
+<form class="form" action="" method="post" name="form" autocomplete="on" enctype="multipart/form-data">
   <fieldset class="form__fieldset fieldset">
     <legend class="form__legend legend">Subscribe to the Newsletter</legend>
 

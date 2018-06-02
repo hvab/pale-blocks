@@ -8,6 +8,7 @@
   color: inherit;
 
   &:disabled {
-    cursor: not-allowed;
+    cursor: default;
+    pointer-events: none;
   }
 }

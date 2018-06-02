@@ -14,11 +14,11 @@
 ## Примеры
 
 ```html
-<img src="" alt="Basic" width="50" height="50" class="image">
+<img src="http://via.placeholder.com/1000x100" alt="Fluid" class="image image_fluid">
 
-<img src="" alt="Fluid" width="50" height="50" class="image image_fluid">
+<img src="http://via.placeholder.com/100x100" alt="Basic" class="image">
 
-<img src="" alt="Rounded" width="50" height="50" class="image image_rounded">
+<img src="http://via.placeholder.com/100x100" alt="Rounded" class="image image_rounded">
 
-<img src="" alt="Circle" width="50" height="50" class="image image_circle">
+<img src="http://via.placeholder.com/100x100" alt="Circle" class="image image_circle">
 ```

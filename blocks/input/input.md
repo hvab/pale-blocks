@@ -12,30 +12,63 @@
 
 ## Примеры
 
-### Типы полей
 ```html
-<input class="input input_theme_pale" type="text" value="Text" disabled>
-<input class="input input_theme_pale" type="search" value="How do I shoot web">
-<input class="input input_theme_pale" type="email" value="bootstrap@example.com">
-<input class="input input_theme_pale" type="url" value="https://ya.ru">
-<input class="input input_theme_pale" type="tel" value="1-(555)-555-5555">
-<input class="input input_theme_pale" type="password" value="hunter2">
-<input class="input input_theme_pale" type="number" value="42">
-<input class="input input_theme_pale" type="date" value="2011-08-19">
-<input class="input input_theme_pale" type="time" value="13:45:00">
-<input class="input input_theme_pale" type="color" value="#563d7c">
-```
+<em>Типы полей:</em>
+<p>
+  <input class="input input_theme_pale" type="text" value="Text">
+</p>
+<p>
+  <input class="input input_theme_pale" type="search" value="How do I shoot web">
+</p>
+<p>
+  <input class="input input_theme_pale" type="email" value="bootstrap@example.com">
+</p>
+<p>
+  <input class="input input_theme_pale" type="url" value="https://ya.ru">
+</p>
+<p>
+  <input class="input input_theme_pale" type="tel" value="1-(555)-555-5555">
+</p>
+<p>
+  <input class="input input_theme_pale" type="password" value="hunter2">
+</p>
+<p>
+  <input class="input input_theme_pale" type="number" value="42">
+</p>
+<p>
+  <input class="input input_theme_pale" type="date" value="2011-08-19">
+</p>
+<p>
+  <input class="input input_theme_pale" type="time" value="13:45:00">
+</p>
+<p>
+  <input class="input input_theme_pale" type="color" value="#563d7c">
+</p>
 
-### Ширина
-```html
-<input class="input input_width_available input_theme_pale" type="text" value="width available">
-```
+<em>Disabled:</em>
+<p>
+  <input class="input input_theme_pale" type="text" value="Text" disabled>
+</p>
 
-### Размеры
-```html
-<input class="input input_size_xs input_theme_pale" type="text" value="size xs">
-<input class="input input_size_s input_theme_pale" type="text" value="size s">
-<input class="input input_size_m input_theme_pale" type="text" value="size m">
-<input class="input input_size_l input_theme_pale" type="text" value="size l">
-<input class="input input_size_xl input_theme_pale" type="text" value="size xl">
+<em>Width:</em>
+<p>
+  <input class="input input_theme_pale input_width_available" type="text" value="Text">
+</p>
+
+<em>Size:</em>
+<p>
+  <input class="input input_size_xs input_theme_pale" type="text" value="size xs">
+</p>
+<p>
+  <input class="input input_size_s input_theme_pale" type="text" value="size s">
+</p>
+<p>
+  <input class="input input_size_m input_theme_pale" type="text" value="size m">
+</p>
+<p>
+  <input class="input input_size_l input_theme_pale" type="text" value="size l">
+</p>
+<p>
+  <input class="input input_size_xl input_theme_pale" type="text" value="size xl">
+</p>
 ```

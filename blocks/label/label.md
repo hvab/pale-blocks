@@ -11,7 +11,6 @@
 
 ## Примеры
 
-### Виды
 ```html
 <label class="label">Label</label>
 

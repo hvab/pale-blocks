@@ -5,5 +5,11 @@
 ## Примеры
 
 ```html
-<input type="checkbox" class="checkbox"> I accept the terms and conditions
+<p>
+  <input type="checkbox" class="checkbox"> I accept the terms and conditions
+</p>
+
+<p>
+  <input type="checkbox" class="checkbox" disabled> I accept the terms and conditions
+</p>
 ```
