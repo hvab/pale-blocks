@@ -1,0 +1,122 @@
+.demo {
+  background-color: #e0f2f1;
+}
+
+  .demo .container {
+    padding: 1rem;
+  }
+
+  .demo pre {
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+  }
+
+.demo__nav {
+  columns: 4;
+}
+
+.demo__nav a {
+    display: block;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+
+.demo__md {
+  overflow-x: auto;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.demo__md > h1 {
+    font-size: 1.414rem;
+  }
+
+.demo__md > h2 {
+    font-size: 1rem;
+  }
+
+.demo__md > h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+.demo__md > table {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+.demo__md > table th,
+    .demo__md > table td {
+      box-sizing: border-box;
+      padding: 0.4rem;
+      vertical-align: top;
+    }
+
+.demo__md > table th {
+      text-align: left;
+    }
+
+.demo__md > table tbody tr:nth-of-type(odd) {
+      background-color: #fafafa;
+    }
+
+.demo__example {
+  position: relative;
+  overflow-x: auto;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  border: 2px solid #f0f4c3;
+}
+
+.demo__example:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+.demo__example::before {
+    position: absolute;
+    bottom: 100%;
+    left: -2px;
+    display: block;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1;
+    content: "Пример";
+    background-color: #f0f4c3;
+  }
+
+/* grid */
+
+.demo__example .grid__cell {
+    text-align: center;
+  }
+
+.demo__example .grid__cell:nth-of-type(even) {
+    background-color: #e0f7fa;
+  }
+
+.demo__example .grid__cell:nth-of-type(odd) {
+    background-color: #b2ebf2;
+  }
+
+/* media */
+
+.demo__example .media__body {
+    padding: 0.5rem;
+  }

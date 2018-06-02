@@ -1,4 +1,39 @@
-.content address,
+/* Add the correct text decoration in Chrome, Edge, and Safari */
+  .content abbr[title] {
+    text-decoration: underline dotted;
+  }
+  /* Add the correct font weight in Chrome, Edge, and Safari */
+  .content b,
+  .content strong {
+    font-weight: bolder;
+  }
+  /* Add the correct height in Firefox */
+  .content hr {
+    height: 0;
+  }
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
+  .content sub,
+  .content sup {
+    position: relative;
+    font-size: 75%;
+    vertical-align: baseline;
+    line-height: 0;
+  }
+  .content sub {
+    bottom: -0.25em;
+  }
+  .content sup {
+    top: -0.5em;
+  }
+  /* Add the correct font size in all browsers */
+  .content small {
+    font-size: 80%;
+  }
+  .content address,
   .content blockquote,
   .content details,
   .content dl,
@@ -12,31 +47,91 @@
   .content ol,
   .content p,
   .content pre,
+  .content table,
   .content ul {
     margin-top: 0;
+    margin-bottom: 1rem;
   }
-
-    .content address:last-child, .content blockquote:last-child, .content details:last-child, .content dl:last-child, .content h1:last-child, .content h2:last-child, .content h3:last-child, .content h4:last-child, .content h5:last-child, .content h6:last-child, .content hr:last-child, .content ol:last-child, .content p:last-child, .content pre:last-child, .content ul:last-child {
+  .content address:last-child, .content blockquote:last-child, .content details:last-child, .content dl:last-child, .content h1:last-child, .content h2:last-child, .content h3:last-child, .content h4:last-child, .content h5:last-child, .content h6:last-child, .content hr:last-child, .content ol:last-child, .content p:last-child, .content pre:last-child, .content table:last-child, .content ul:last-child {
       margin-bottom: 0;
     }
-  .content a {
-    touch-action: manipulation;
+  .content h1,
+  .content h2,
+  .content h3 {
+    margin-top: 2rem;
+    line-height: 1.1;
   }
-  .content sub,
-  .content sup {
-    font-size: 75%;
-    line-height: 0;
+  .content h1 + h2,
+  .content h2 + h3,
+  .content h1:first-child,
+  .content h2:first-child,
+  .content h3:first-child {
+    margin-top: 0;
+  }
+  .content h4,
+  .content h5,
+  .content h6 {
+    margin-bottom: 0;
+  }
 
-    position: relative;
+/* Themed */
 
-    vertical-align: baseline;
+.content_theme_pale {
+  line-height: 1.5;
+}
+
+/* http://www.modularscale.com/?16&px&1.414 */
+
+.content_theme_pale h1 {
+    font-size: 2.827rem; /* 45.234px */
   }
-  .content sub {
-    bottom: -0.25em;
+
+.content_theme_pale h2 {
+    font-size: 1.999rem; /* 31.99px */
   }
-  .content sup {
-    top: -0.5em;
+
+.content_theme_pale h3 {
+    font-size: 1.414rem; /* 22.624px */
   }
-  .content small {
-    font-size: 80%;
+
+.content_theme_pale h4,
+  .content_theme_pale h5,
+  .content_theme_pale h6 {
+    font-size: 1rem;
+  }
+
+.content_theme_pale h5 {
+    font-style: italic;
+  }
+
+.content_theme_pale h6 {
+    font-weight: normal;
+  }
+
+.content_theme_pale ol,
+  .content_theme_pale ul {
+    padding-left: 2rem;
+  }
+
+.content_theme_pale dt {
+    font-weight: bold;
+  }
+
+.content_theme_pale dd {
+    margin-left: 2rem;
+  }
+
+.content_theme_pale blockquote {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+
+.content_theme_pale hr {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+.content_theme_pale mark {
+    padding: 0.2em;
+    background-color: #fcf8e3;
   }

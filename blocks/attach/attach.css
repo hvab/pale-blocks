@@ -1,29 +1,23 @@
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  font: inherit; /* 2 */
+  -webkit-appearance: button; /* 1 */
+}
 .attach {
+  box-sizing: border-box;
+  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-
-  /* Show the overflow in Edge. */
-  overflow: visible;
-
-  box-sizing: border-box;
-
-  /* Remove the margin in Firefox and Safari. */
-  margin: 0;
-
-  touch-action: manipulation;
-
   color: inherit;
 }
-
-  .attach::-webkit-file-upload-button {
-    -webkit-appearance: button;
+.attach:disabled {
+    cursor: default;
+    pointer-events: none;
   }
-
-  .attach:disabled {
-    opacity: 0.65;
-  }
-
 .attach_width_available {
   width: 100%;
 }

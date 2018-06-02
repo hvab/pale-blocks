@@ -1,14 +1,12 @@
 .spin {
   display: none;
-
-  border: 3px solid teal;
+  border: 3px solid currentColor;
   border-top: 3px solid transparent;
   border-radius: 50%;
 }
 
 .spin_visible {
   display: inline-block;
-
   animation: spin 1s linear infinite;
 }
 
