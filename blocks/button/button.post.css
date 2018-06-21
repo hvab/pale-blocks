@@ -52,6 +52,7 @@ button:-moz-focusring,
 
 .button_view_plain {
   padding: 0;
+  text-align: left;
   background: none;
   border: 0;
 }
