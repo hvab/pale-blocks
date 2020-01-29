@@ -1,0 +1,29 @@
+.page_theme_default {
+  /* Font family */
+  --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --font-serif: Georgia, serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol;
+  --font-mono: Consolas, Liberation Mono, Menlo, Monaco, Courier, monospace,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+
+  /* Font size */
+  --size-text-base: 16px;
+  --size-text-xs: 0.7rem;
+  --size-text-s: 0.8rem;
+  --size-text-m: 1rem;
+  --size-text-l: 1.125rem;
+  --size-text-xl: 1.25rem;
+
+  /* Line height */
+  --line-height-text-xs: 1.2;
+  --line-height-text-s: 1.4;
+  --line-height-text-m: 1.5;
+  --line-height-text-l: 1.6;
+
+  /* Font color */
+  --color-typo-base: #000;
+
+  /* Background color */
+  --color-bg-base: #fff;
+}

@@ -1,0 +1,10 @@
+@import "page_theme_default.post.css";
+
+.page {
+  margin: 0;
+  font-size: var(--size-text-base);
+  font-family: var(--font-sans);
+  color: var(--color-typo-base);
+  background-color: var(--color-bg-base);
+  line-height: var(--line-height-text-m);
+}

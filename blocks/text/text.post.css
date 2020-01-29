@@ -1,0 +1,153 @@
+/* Headlines */
+.text_headline_1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 6rem;
+}
+
+.text_headline_2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 3.75rem;
+}
+
+.text_headline_3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.125rem;
+}
+
+.text_headline_4 {
+  font-size: 2.125rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.text_headline_5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.text_headline_6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+/* Subtitles */
+.text_subtitle_1 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.text_subtitle_2 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+
+/* Body */
+.text_body_1 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.text_body_2 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+/* View */
+.text_view_button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2.25rem;
+}
+
+.text_view_caption {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.text_view_overline {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 0.17em;
+}
+
+/* Utils */
+
+/* Text truncate
+Requires inline-block or block for proper styling */
+.text_truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* CSS image replacement */
+.text_hide {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+}
+
+/* Only display content to screen readers
+See: http://a11yproject.com/posts/how-to-hide-content */
+.text_sr {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* Align */
+.text_align_center {
+  text-align: center !important;
+}
+
+.text_align_left {
+  text-align: left !important;
+}
+
+.text_align_right {
+  text-align: right !important;
+}
+
+/* Wrap */
+.text_wrap_yes {
+  white-space: normal !important;
+}
+
+.text_wrap_no {
+  white-space: nowrap !important;
+}
+
+.text_wrap_break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Color */
+.text_color_reset {
+  color: inherit !important;
+}
+
+/* Decoration */
+.text_decoration_no {
+  text-decoration: none !important;
+}
